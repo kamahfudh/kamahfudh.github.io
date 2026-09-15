@@ -477,7 +477,8 @@ section + section { border-top: 1px solid var(--border); }
 .work-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; align-items: start; }
 .work-card { display: flex; flex-direction: column; }
 .work-card-media { margin-bottom: 20px; }
-.work-card-media .mockup-screen { position: relative; overflow: hidden; }
+.mockup-screen { position: relative; overflow: hidden; }
+.mockup-screen img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .work-card-media img { display: block; width: 100%; height: auto; transition: transform .6s var(--ease); }
 .work-card:hover .work-card-media img { transform: scale(1.05); }
 .work-card h3 { font-size: 22px; margin-bottom: 8px; }
