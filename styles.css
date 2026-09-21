@@ -217,6 +217,8 @@ em, i {
 .btn-primary:hover { background: #ffffff; }
 .btn-ghost { border: 1px solid var(--border-strong); color: var(--ink); }
 .btn-ghost:hover { border-color: var(--ink-dim); background: var(--bg-raised); }
+.btn-accent { background: var(--accent-grad); color: #14161a; }
+.btn-accent:hover { filter: brightness(1.08); }
 
 /* ---- Nav ---- */
 .site-nav {
