@@ -379,6 +379,7 @@ em, i {
   top: -140px;
   right: 26px;
   width: 168px;
+  aspect-ratio: 1756 / 3664;
   z-index: 0;
   transform: rotate(10deg);
   transform-origin: bottom center;
@@ -390,8 +391,17 @@ em, i {
   transform: rotate(0deg) scale(1.08) translateY(-18px);
   transition: transform .45s var(--ease), z-index 0s linear;
 }
-.hero-mobile-peek img { display: block; width: 100%; height: auto; filter: drop-shadow(0 30px 50px rgba(0,0,0,.55)); transition: filter .45s var(--ease); }
+.hero-mobile-peek img { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: contain; opacity: 0; transform: scale(1); filter: drop-shadow(0 30px 50px rgba(0,0,0,.55)); transition: filter .45s var(--ease); }
+.hero-mobile-peek img:first-of-type { opacity: 1; }
 .hero-mobile-peek:hover img { filter: drop-shadow(0 44px 70px rgba(0,0,0,.7)); }
+@media (prefers-reduced-motion: no-preference) {
+  .hero-mobile-peek img:nth-of-type(1) { animation: heroMobileCycle1 12s ease-in-out infinite; }
+  .hero-mobile-peek img:nth-of-type(2) { animation: heroMobileCycle2 12s ease-in-out infinite; opacity: 0; }
+  .hero-mobile-peek img:nth-of-type(3) { animation: heroMobileCycle3 12s ease-in-out infinite; opacity: 0; }
+}
+@keyframes heroMobileCycle1 { 0% { opacity: 1; transform: scale(1); } 26% { opacity: 1; transform: scale(1.04); } 30% { opacity: 0; transform: scale(1.04); } 30.5%, 100% { opacity: 0; transform: scale(1); } }
+@keyframes heroMobileCycle2 { 0%, 30.5% { opacity: 0; transform: scale(1); } 36% { opacity: 1; transform: scale(1); } 59% { opacity: 1; transform: scale(1.04); } 63% { opacity: 0; transform: scale(1.04); } 63.5%, 100% { opacity: 0; transform: scale(1); } }
+@keyframes heroMobileCycle3 { 0%, 63.5% { opacity: 0; transform: scale(1); } 69% { opacity: 1; transform: scale(1); } 92% { opacity: 1; transform: scale(1.04); } 96% { opacity: 0; transform: scale(1.04); } 96.5%, 100% { opacity: 0; transform: scale(1); } }
 .hero-visual .mockup { position: relative; z-index: 1; }
 @media (prefers-reduced-motion: reduce) {
   .hero-mobile-peek,
