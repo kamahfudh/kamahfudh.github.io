@@ -537,7 +537,8 @@ section + section { border-top: 1px solid var(--border); }
 .cs-cover:hover .phone-mockup img { transform: scale(1.03); }
 
 @media (max-width: 900px) {
-  .feature-mobile { grid-template-columns: 1fr; gap: 36px; }
+  .feature-mobile, .feature-mobile.reverse { grid-template-columns: 1fr; gap: 36px; }
+  .feature-mobile.reverse .phone-mockup { order: -1; }
   .phone-mockup { max-width: 240px; }
 }
 
