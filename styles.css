@@ -220,8 +220,8 @@ em, i {
 .btn-accent { background: var(--accent-grad); color: #14161a; }
 .btn-accent:hover { filter: brightness(1.08); }
 
-.btn-cv-anim { border: 1px solid transparent; }
-.btn-cv-anim:hover { border-color: #14161a; }
+.btn-cv-anim { outline: 2px solid transparent; outline-offset: 3px; transition: outline-color .25s var(--ease), outline-offset .25s var(--ease); }
+.btn-cv-anim:hover { outline-color: var(--accent); }
 
 /* ---- Nav ---- */
 .site-nav {
