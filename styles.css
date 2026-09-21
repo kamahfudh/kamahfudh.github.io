@@ -573,7 +573,7 @@ section + section { border-top: 1px solid var(--border); }
 .exp-card { display: block; border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border); }
 .exp-card .exp-frame { position: relative; aspect-ratio: var(--ratio, .4618); overflow: hidden; }
 .exp-card .exp-track { display: flex; width: 400%; height: 100%; }
-.exp-card .exp-track img { flex: 0 0 25%; width: 25%; height: 100%; object-fit: cover; display: block; }
+.exp-card .exp-track img { flex: 0 0 25%; width: 25%; height: 100%; object-fit: cover; object-position: top; display: block; }
 
 @media (prefers-reduced-motion: no-preference) {
   .exp-card .exp-track { animation: expSlide 14s cubic-bezier(.65,0,.35,1) infinite; }
