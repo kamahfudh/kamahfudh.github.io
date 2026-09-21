@@ -715,6 +715,38 @@ footer { padding: 56px 0 64px; border-top: 1px solid var(--border); }
 .form-note { font-size: 12.5px; color: var(--ink-faint); margin: 0; }
 .contact-form .btn-primary { align-self: flex-start; }
 
+/* ---- CV access modal ---- */
+.cv-modal {
+  position: fixed; inset: 0; z-index: 300;
+  display: flex; align-items: center; justify-content: center; padding: 24px;
+  opacity: 0; visibility: hidden;
+  transition: opacity .3s var(--ease), visibility 0s linear .3s;
+}
+.cv-modal[aria-hidden="false"] { opacity: 1; visibility: visible; transition: opacity .3s var(--ease); }
+.cv-modal-backdrop { position: absolute; inset: 0; background: rgba(8,9,11,.72); backdrop-filter: blur(6px); }
+.cv-modal-panel {
+  position: relative; width: 100%; max-width: 440px; max-height: 90vh; overflow-y: auto;
+  background: var(--bg-raised); border: 1px solid var(--border-strong); border-radius: var(--radius-lg);
+  padding: 40px 36px; box-shadow: 0 40px 80px -30px rgba(0,0,0,.6);
+  transform: translateY(16px) scale(.98); transition: transform .35s var(--ease);
+}
+.cv-modal[aria-hidden="false"] .cv-modal-panel { transform: translateY(0) scale(1); }
+@media (prefers-reduced-motion: reduce) {
+  .cv-modal, .cv-modal-panel { transition: none; }
+}
+.cv-modal-close {
+  position: absolute; top: 18px; right: 18px; width: 32px; height: 32px;
+  display: flex; align-items: center; justify-content: center; border-radius: 50%;
+  color: var(--ink-faint); transition: color .2s, background .2s;
+}
+.cv-modal-close:hover { color: var(--ink); background: var(--bg); }
+.cv-modal-close svg { width: 18px; height: 18px; }
+.cv-modal-step h3 { font-family: var(--font-display); font-size: 26px; color: var(--ink); margin: 10px 0 12px; }
+.cv-modal-step .body-m { margin-bottom: 24px; }
+.cv-modal-error { font-size: 13.5px; color: #ff8577; margin: -6px 0 0; }
+.cv-modal-link { display: inline-block; margin-top: 18px; font-size: 13.5px; color: var(--ink-faint); text-decoration: underline; text-underline-offset: 3px; transition: color .2s; }
+.cv-modal-link:hover { color: var(--ink); }
+
 @media (max-width: 900px) {
   .contact-split { grid-template-columns: 1fr; gap: 40px; }
   .form-row { grid-template-columns: 1fr; }

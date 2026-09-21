@@ -154,3 +154,120 @@
     revealEls.forEach(function (el) { el.classList.add('is-visible'); });
   }
 })();
+
+(function () {
+  var CV_API_URL = 'https://script.google.com/macros/s/AKfycbwd5uic5U1bJv--e2Q9VFFGYrEwz3PjRmE-379NRP-nCKr1G5_rvkRLR4jMdjJyRvvo/exec';
+
+  var modal = document.querySelector('[data-cv-modal]');
+  if (!modal) return;
+
+  var openBtn = document.querySelector('[data-cv-modal-open]');
+  var closeEls = modal.querySelectorAll('[data-cv-modal-close]');
+  var steps = modal.querySelectorAll('[data-cv-step]');
+
+  var showStep = function (name) {
+    steps.forEach(function (s) { s.hidden = s.getAttribute('data-cv-step') !== name; });
+  };
+  var openModal = function () {
+    showStep('request');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  };
+  var closeModal = function () {
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  };
+
+  if (openBtn) openBtn.addEventListener('click', openModal);
+  closeEls.forEach(function (el) { el.addEventListener('click', closeModal); });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && modal.getAttribute('aria-hidden') === 'false') closeModal();
+  });
+
+  modal.querySelectorAll('[data-cv-goto-verify]').forEach(function (el) {
+    el.addEventListener('click', function () { showStep('verify'); });
+  });
+  modal.querySelectorAll('[data-cv-goto-request]').forEach(function (el) {
+    el.addEventListener('click', function () { showStep('request'); });
+  });
+
+  var postToBackend = function (payload) {
+    return fetch(CV_API_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+      body: JSON.stringify(payload)
+    }).then(function (res) { return res.json(); });
+  };
+
+  var setBusy = function (form, busy, idleLabel, busyLabel) {
+    var btn = form.querySelector('button[type="submit"]');
+    btn.disabled = busy;
+    btn.textContent = busy ? busyLabel : idleLabel;
+  };
+
+  var requestForm = modal.querySelector('[data-cv-request-form]');
+  var requestError = modal.querySelector('[data-cv-request-error]');
+  if (requestForm) {
+    requestForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      requestError.hidden = true;
+      setBusy(requestForm, true, 'Request access', 'Sending…');
+      postToBackend({
+        action: 'request',
+        name: requestForm.name.value.trim(),
+        email: requestForm.email.value.trim()
+      }).then(function (res) {
+        if (res.ok) {
+          showStep('sent');
+        } else {
+          requestError.textContent = res.error || 'Something went wrong. Please try again.';
+          requestError.hidden = false;
+        }
+      }).catch(function () {
+        requestError.textContent = 'Network error. Please try again.';
+        requestError.hidden = false;
+      }).then(function () {
+        setBusy(requestForm, false, 'Request access', 'Sending…');
+      });
+    });
+  }
+
+  var verifyForm = modal.querySelector('[data-cv-verify-form]');
+  var verifyError = modal.querySelector('[data-cv-verify-error]');
+  if (verifyForm) {
+    verifyForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      verifyError.hidden = true;
+      setBusy(verifyForm, true, 'Unlock & download', 'Checking…');
+      postToBackend({
+        action: 'verify',
+        email: verifyForm.email.value.trim(),
+        passcode: verifyForm.passcode.value.trim()
+      }).then(function (res) {
+        if (res.ok) {
+          var byteChars = atob(res.base64);
+          var byteNumbers = new Array(byteChars.length);
+          for (var i = 0; i < byteChars.length; i++) byteNumbers[i] = byteChars.charCodeAt(i);
+          var blob = new Blob([new Uint8Array(byteNumbers)], { type: res.mime || 'application/pdf' });
+          var url = URL.createObjectURL(blob);
+          var a = document.createElement('a');
+          a.href = url;
+          a.download = res.filename || 'CV.pdf';
+          document.body.appendChild(a);
+          a.click();
+          a.remove();
+          setTimeout(function () { URL.revokeObjectURL(url); }, 2000);
+          closeModal();
+        } else {
+          verifyError.textContent = res.error || 'Invalid email or passcode.';
+          verifyError.hidden = false;
+        }
+      }).catch(function () {
+        verifyError.textContent = 'Network error. Please try again.';
+        verifyError.hidden = false;
+      }).then(function () {
+        setBusy(verifyForm, false, 'Unlock & download', 'Checking…');
+      });
+    });
+  }
+})();

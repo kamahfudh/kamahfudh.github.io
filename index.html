@@ -8,7 +8,7 @@
 <meta http-equiv="Expires" content="0">
 <title>Mahfudh Khoiri Amran - Product Designer</title>
 <meta name="description" content="Mahfudh Khoiri Amran is a product designer based in Medan, Indonesia, shipping web and mobile UI for a Kuala Lumpur software house and independent Islamic-tech products.">
-<link rel="stylesheet" href="styles.css?v=68">
+<link rel="stylesheet" href="styles.css?v=69">
 </head>
 <body>
 <div class="ambient-bg" aria-hidden="true"><div class="ambient-layer a"></div><div class="ambient-layer b"></div><span class="firefly" style="top:15%;left:10%;animation-delay:0s,.8s;"></span><span class="firefly m2" style="top:60%;left:6%;animation-delay:3s,2s;"></span><span class="firefly m3 cool" style="top:25%;left:85%;animation-delay:6s,.3s;"></span><span class="firefly m4" style="top:80%;left:75%;animation-delay:2s,3.5s;"></span><span class="firefly m2 cool" style="top:45%;left:50%;animation-delay:9s,1.5s;"></span><span class="firefly" style="top:70%;left:30%;animation-delay:5s,2.8s;"></span><span class="firefly m3" style="top:10%;left:55%;animation-delay:1s,4s;"></span><span class="firefly m4 cool" style="top:90%;left:15%;animation-delay:7s,.6s;"></span><span class="firefly m2" style="top:35%;left:92%;animation-delay:4s,3s;"></span><span class="firefly m3" style="top:55%;left:20%;animation-delay:8s,1s;"></span></div>
@@ -52,7 +52,7 @@
       <div class="hero-ctas hero-fade" style="animation-delay:0.27s">
         <a href="#work" class="btn btn-primary">View work</a>
         <a href="contact.html" class="btn btn-ghost">Get in touch</a>
-        <a href="files/Mahfudh-Khoiri-Amran-CV.pdf" download class="btn btn-ghost">Download CV</a>
+        <button type="button" class="btn btn-ghost" data-cv-modal-open>Download CV</button>
       </div>
       <dl class="hero-stats hero-fade" style="animation-delay:0.36s">
         <div><dt>Based</dt><dd>Medan, Indonesia</dd></div>
@@ -369,6 +369,60 @@
   </div>
 </footer>
 
-<script src="script.js?v=21"></script>
+<div class="cv-modal" data-cv-modal aria-hidden="true">
+  <div class="cv-modal-backdrop" data-cv-modal-close></div>
+  <div class="cv-modal-panel" role="dialog" aria-modal="true" aria-labelledby="cv-modal-title">
+    <button type="button" class="cv-modal-close" data-cv-modal-close aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+
+    <div class="cv-modal-step" data-cv-step="request">
+      <p class="meta-label">Download CV</p>
+      <h3 id="cv-modal-title">Request access.</h3>
+      <p class="body-m">Leave your name and email, I review each request myself and email you a one-time passcode to unlock the download.</p>
+      <form class="contact-form" data-cv-request-form novalidate>
+        <div class="form-field">
+          <label for="cv-req-name">Name</label>
+          <input type="text" id="cv-req-name" name="name" placeholder="Your name" required>
+        </div>
+        <div class="form-field">
+          <label for="cv-req-email">Email</label>
+          <input type="email" id="cv-req-email" name="email" placeholder="you@email.com" required>
+        </div>
+        <p class="cv-modal-error" data-cv-request-error hidden></p>
+        <button type="submit" class="btn btn-primary">Request access</button>
+      </form>
+      <button type="button" class="cv-modal-link" data-cv-goto-verify>Already have a passcode?</button>
+    </div>
+
+    <div class="cv-modal-step" data-cv-step="sent" hidden>
+      <p class="meta-label">Download CV</p>
+      <h3>Request sent.</h3>
+      <p class="body-m">I'll review it shortly. Once approved, a passcode will land in your inbox, enter it below to download.</p>
+      <button type="button" class="btn btn-primary" data-cv-goto-verify>Enter passcode</button>
+    </div>
+
+    <div class="cv-modal-step" data-cv-step="verify" hidden>
+      <p class="meta-label">Download CV</p>
+      <h3>Enter your passcode.</h3>
+      <p class="body-m">Check your email for the passcode once your request has been approved.</p>
+      <form class="contact-form" data-cv-verify-form novalidate>
+        <div class="form-field">
+          <label for="cv-ver-email">Email</label>
+          <input type="email" id="cv-ver-email" name="email" placeholder="you@email.com" required>
+        </div>
+        <div class="form-field">
+          <label for="cv-ver-passcode">Passcode</label>
+          <input type="text" id="cv-ver-passcode" name="passcode" inputmode="numeric" pattern="[0-9]*" maxlength="6" placeholder="6-digit code" required>
+        </div>
+        <p class="cv-modal-error" data-cv-verify-error hidden></p>
+        <button type="submit" class="btn btn-primary">Unlock &amp; download</button>
+      </form>
+      <button type="button" class="cv-modal-link" data-cv-goto-request>Need to request access instead?</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js?v=22"></script>
 </body>
 </html>
