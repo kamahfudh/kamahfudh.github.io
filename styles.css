@@ -408,7 +408,7 @@ em, i {
   .hero-mobile-peek:hover { transition: none; }
 }
 @media (max-width: 900px) {
-  .hero-mobile-peek { width: 130px; top: -163px; right: 10px; }
+  .hero-mobile-peek { width: 130px; top: -163px; right: 46px; }
 }
 
 .hero-badge {
