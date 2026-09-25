@@ -318,9 +318,13 @@ em, i {
 .mobile-sheet-links a:active, .mobile-sheet-links a.is-active { color: var(--ink); }
 .mobile-sheet-cta { justify-content: center; width: 100%; }
 
+.nav-play { padding: 9px 18px; font-size: 14px; }
+
 @media (max-width: 760px) {
   .nav-links { display: none; }
   .nav-burger { display: flex; }
+  .nav-play { padding: 9px 15px; }
+  .nav-play-long { display: none; }
 }
 
 /* ---- Reveal ---- */
