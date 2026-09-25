@@ -4,6 +4,7 @@ import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
 import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
 import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js';
 import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
+import { ShaderPass } from 'three/addons/postprocessing/ShaderPass.js';
 import { COLORS, clamp01, lerp, seg, smooth } from './util.js';
 import { createRobot } from './robot.js';
 import { levelBoot, levelWeb, levelMobile, levelSide, levelClimb, levelCollect, levelContact } from './levels.js';
@@ -113,6 +114,16 @@ scene.add(robot.root);
 
 const composer = new EffectComposer(renderer);
 composer.addPass(new RenderPass(scene, camera));
+// Safety net: one NaN/Inf pixel would otherwise spread through the bloom blur as a black rectangle.
+composer.addPass(new ShaderPass({
+  uniforms: { tDiffuse: { value: null } },
+  vertexShader: 'varying vec2 vUv; void main() { vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0); }',
+  fragmentShader: `uniform sampler2D tDiffuse; varying vec2 vUv;
+    void main() {
+      vec4 c = texture2D(tDiffuse, vUv);
+      gl_FragColor = (any(isnan(c)) || any(isinf(c))) ? vec4(0.0, 0.0, 0.0, 1.0) : min(c, vec4(64.0));
+    }`,
+}));
 const bloom = new UnrealBloomPass(new THREE.Vector2(1, 1), 0.55, 0.45, 1.45);
 composer.addPass(bloom);
 composer.addPass(new OutputPass());

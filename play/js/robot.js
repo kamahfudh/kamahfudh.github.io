@@ -156,6 +156,15 @@ export function createRobot() {
 
   const limbs = [armL, armR, legL, legR];
   const tmp = new THREE.Vector3();
+  // A cone squashed to zero height has a singular normal matrix; its lighting turns NaN and the bloom
+  // pass smears that into big black blocks. So hide the flames instead of scaling them to 0.
+  const setFlames = (h, time = 0, wobble = 0) => {
+    for (const f of flames) {
+      const y = h * (1 + Math.sin(time * 45 + f.position.x * 10) * wobble);
+      f.visible = y > 0.001;
+      f.scale.set(1, Math.max(y, 0.001), 1);
+    }
+  };
 
   const api = {
     root, hips, torso, head, armL, armR, legL, legR, jet, flames, sparks, bulb, core,
@@ -172,7 +181,7 @@ export function createRobot() {
       }
       eyeL.scale.set(1, 1, 1);
       eyeR.scale.set(1, 1, 1);
-      for (const f of flames) f.scale.set(1, 0, 1);
+      setFlames(0);
       sparks.visible = false;
     },
     breathe(time, amount = 1) {
@@ -196,7 +205,7 @@ export function createRobot() {
       torso.rotation.x = 0.08 * amount;
     },
     fly(amount, time) {
-      for (const f of flames) f.scale.set(1, amount * (0.85 + Math.sin(time * 45 + f.position.x * 10) * 0.15), 1);
+      setFlames(amount * 0.85, time, 0.15 / 0.85);
       torso.rotation.x = 0.28 * amount;
       armL.shoulder.rotation.x = 0.5 * amount;
       armR.shoulder.rotation.x = 0.5 * amount;
@@ -208,7 +217,7 @@ export function createRobot() {
       legR.knee.rotation.x = 0.6 * amount;
     },
     hover(amount, time) {
-      for (const f of flames) f.scale.set(1, amount * (0.55 + Math.sin(time * 40 + f.position.x * 10) * 0.12), 1);
+      setFlames(amount * 0.55, time, 0.12 / 0.55);
       legL.knee.rotation.x = 0.35 * amount;
       legR.knee.rotation.x = 0.45 * amount;
       legL.hip.rotation.x = -0.1 * amount;
