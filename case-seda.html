@@ -1,157 +1,122 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" style="--bg:#17205c;--accent:#8fb0ff">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<meta http-equiv="Pragma" content="no-cache">
-<meta http-equiv="Expires" content="0">
-<title>SEDA - Case Study - Mahfudh Khoiri Amran</title>
-<meta name="description" content="Designing SEDA, a five-role training and registration platform for Malaysia's Sustainable Energy Development Authority.">
-<link rel="stylesheet" href="styles.css?v=80">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SEDA — Case study — Mahfudh Khoiri Amran</title>
+<meta name="description" content="A multi-role web platform for Malaysia&#x27;s Sustainable Energy Development Authority, covering everything from public training registration to admin-side reporting, across five distinct user roles.">
+<meta name="theme-color" content="#17205c">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&family=Onest:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="styles.css?v=r3-2">
+<script>document.documentElement.classList.add('js');</script>
 </head>
-<body>
-<div class="ambient-bg" aria-hidden="true"><div class="ambient-layer a"></div><div class="ambient-layer b"></div><span class="firefly" style="top:15%;left:10%;animation-delay:0s,.8s;"></span><span class="firefly m2" style="top:60%;left:6%;animation-delay:3s,2s;"></span><span class="firefly m3 cool" style="top:25%;left:85%;animation-delay:6s,.3s;"></span><span class="firefly m4" style="top:80%;left:75%;animation-delay:2s,3.5s;"></span><span class="firefly m2 cool" style="top:45%;left:50%;animation-delay:9s,1.5s;"></span><span class="firefly" style="top:70%;left:30%;animation-delay:5s,2.8s;"></span><span class="firefly m3" style="top:10%;left:55%;animation-delay:1s,4s;"></span><span class="firefly m4 cool" style="top:90%;left:15%;animation-delay:7s,.6s;"></span><span class="firefly m2" style="top:35%;left:92%;animation-delay:4s,3s;"></span><span class="firefly m3" style="top:55%;left:20%;animation-delay:8s,1s;"></span></div>
-<div class="scroll-sentinel" aria-hidden="true"></div>
-<div class="page-transition" aria-hidden="true">
-  <span class="pt-cell"></span><span class="pt-cell"></span><span class="pt-cell"></span><span class="pt-cell"></span>
-  <span class="pt-cell"></span><span class="pt-cell"></span><span class="pt-cell"></span><span class="pt-cell"></span>
-  <span class="pt-cell"></span><span class="pt-cell"></span><span class="pt-cell"></span><span class="pt-cell"></span>
-  <span class="pt-cell"></span><span class="pt-cell"></span><span class="pt-cell"></span><span class="pt-cell"></span>
-</div>
-
-<nav class="site-nav">
-  <div class="wrap">
-    <a href="index.html" class="logotype">mahfudh<span>.</span></a>
-    <div class="nav-links">
-      <a href="index.html#work">Work</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </div>
-    <div class="nav-right">
-      <a href="play/" class="btn btn-accent nav-play" aria-label="Play the interactive portfolio">▶ Play<span class="nav-play-long"> the portfolio</span></a>
-      <button class="nav-burger" data-nav-burger aria-label="Open menu" aria-expanded="false">
-        <span class="burger-line"></span><span class="burger-line"></span><span class="burger-line"></span>
-      </button>
-    </div>
-  </div>
-  </nav>
-<div class="mobile-sheet" data-mobile-sheet>
-  <div class="mobile-sheet-links">
-    <a href="index.html#work">Work</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </div>
-  <a href="contact.html" class="btn btn-primary mobile-sheet-cta">Get in touch</a>
-</div>
-
-<header class="cs-header">
-  <div class="wrap">
-    <a href="index.html#work" class="cs-back"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 6l-6 6 6 6"/></svg> Back to work</a>
-    <p class="meta-label">Case study - Government web platform</p>
-    <h1 style="margin-top: 12px;"><em>SEDA</em>, a training system for renewable energy.</h1>
-    <p class="body-l cs-summary">A multi-role web platform for Malaysia's Sustainable Energy Development Authority, covering everything from public training registration to admin-side reporting, across five distinct user roles.</p>
-    <dl class="cs-meta">
-      <div><dt>Role</dt><dd>UI/UX Designer, Freelance</dd></div>
-      <div><dt>Timeline</dt><dd>Aug 2023 - Nov 2023</dd></div>
-      <div><dt>Platform</dt><dd>Web</dd></div>
-      <div><dt>Client</dt><dd>SEDA Malaysia</dd></div>
-    </dl>
+<body class="is-case">
+<a class="skip" href="#main">Skip to content</a>
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor" data-cursor aria-hidden="true"><span data-cursor-label></span></div>
+<header class="top" data-top>
+  <a class="wordmark" href="index.html" aria-label="mahfudh, home">mahfudh<span>.</span></a>
+  <nav class="nav" aria-label="Primary"><a class="nav-link is-on" aria-current="page" href="index.html#work"><span>Work</span></a><a class="nav-link" href="about.html"><span>About</span></a><a class="nav-link" href="exploratory.html"><span>Exploratory</span></a><a class="nav-link" href="contact.html"><span>Contact</span></a></nav>
+  <div class="top-right">
+    <a class="play" href="play/"><svg class="arr" viewBox="0 0 20 20" aria-hidden="true"><path d="M6 4v12l10-6Z" fill="currentColor"/></svg><span>Play</span></a>
+    <button type="button" class="pill pill-paper" data-cv-open data-magnetic>Request CV</button>
+    <button type="button" class="menu-btn" data-menu aria-expanded="false" aria-controls="menu"><span class="sr-only">Menu</span><i></i><i></i></button>
   </div>
 </header>
-
-<div class="wrap">
-  <div class="cs-cover reveal">
-    <div class="mockup">
-      <div class="browser-frame">
-        <div class="browser-chrome"><span></span><span></span><span></span></div>
-        <div class="mockup-screen" style="aspect-ratio: 1443 / 897;">
-          <img src="images/seda-public-dashboard.png" alt="SEDA STAR public portal with training statistics and a course calendar">
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="menu" id="menu" data-menu-panel hidden>
+  <nav aria-label="Mobile"><a class="menu-link" href="index.html#work" style="--i:0">Work</a><a class="menu-link" href="about.html" style="--i:1">About</a><a class="menu-link" href="exploratory.html" style="--i:2">Exploratory</a><a class="menu-link" href="contact.html" style="--i:3">Contact</a></nav>
+  <div class="menu-foot"><button type="button" class="pill pill-paper" data-cv-open>Request CV</button><a class="pill pill-line" href="play/"><svg class="arr" viewBox="0 0 20 20" aria-hidden="true"><path d="M6 4v12l10-6Z" fill="currentColor"/></svg> Play the portfolio</a></div>
 </div>
+<main id="main">
 
-<section class="cs-block" style="border-top: none;">
-  <div class="wrap cs-block-grid">
-    <div class="reveal">
-      <p class="meta-label">The context</p>
-      <h2>Renewable energy training, spread across five roles.</h2>
-      <p class="body-m">SEDA Malaysia runs certified training for the country's renewable energy and energy-efficiency industry. The system needed to serve five different audiences at once: public applicants browsing courses, SEDA admins running the whole programme, trainers marking attendance, training partners submitting content, and participants tracking their own progress.</p>
-    </div>
-    <div class="cs-shot reveal">
-      <img src="images/seda-admin-dashboard.png" alt="SEDA Admin dashboard with cumulative training chart and data table">
-    </div>
-  </div>
-</section>
-
-<section class="cs-block">
-  <div class="wrap cs-block-grid">
-    <div class="reveal">
-      <p class="meta-label">What I designed</p>
-      <h2>One system, five dashboards.</h2>
-      <ul class="cs-list">
-        <li>Role-based dashboards for SEDA Admin, Public, Participant, Trainer, and Training Partner, each built around what that audience needs to do first.</li>
-        <li>User registration and profile management, from public sign-up through to admin approval and role assignment.</li>
-        <li>Training and event management, question banks, and exam result tracking, end to end.</li>
-        <li>Reporting views built on the same cumulative training data admins already see on their own dashboard.</li>
-      </ul>
-    </div>
-    <div class="cs-shot reveal">
-      <img src="images/seda-trainer-dashboard.png" alt="SEDA Trainer dashboard showing training schedule and history tables">
-    </div>
-  </div>
-</section>
-
-<section class="cs-block">
+<section class="case-hero" data-bg="#17205c" data-accent="#8fb0ff">
   <div class="wrap">
-    <div class="section-head reveal">
-      <p class="meta-label">Designed from a spec, screen by screen</p>
-      <h2>Consistent across five very different jobs to be done.</h2>
-      <p class="body-m">Working at Seetru Studio alongside a Lead Designer and Project Manager, I translated a detailed requirement specification into prototypes for every screen, keeping registration, training management, and exam tracking consistent with each other even as the audience changed from screen to screen.</p>
-    </div>
-    <div class="cs-shot-row thirds reveal">
-      <div class="cs-shot"><img src="images/seda-user-registration.png" alt="SEDA User Registration Management table"></div>
-      <div class="cs-shot"><img src="images/seda-training-mgmt.png" alt="SEDA Training Management upcoming training list"></div>
-      <div class="cs-shot"><img src="images/seda-exam-result.png" alt="SEDA Exam Result status tracking table"></div>
+    <p class="crumbs hero-in" style="--d:0"><a href="index.html#work">Work</a> <span aria-hidden="true">/</span> Government web platform</p>
+    <h1 class="case-title"><span class="sr-only">SEDA</span><span class="hl" aria-hidden="true"><span style="--d:1">SEDA</span></span></h1>
+    <p class="case-tag hero-in" style="--d:2">a training system for renewable energy.</p>
+    <div class="case-intro hero-in" style="--d:3">
+      <p class="lede">A multi-role web platform for Malaysia&#x27;s Sustainable Energy Development Authority, covering everything from public training registration to admin-side reporting, across five distinct user roles.</p>
+      <dl class="case-meta"><div><dt>Role</dt><dd>UI/UX Designer, Freelance</dd></div><div><dt>Timeline</dt><dd>Aug 2023 - Nov 2023</dd></div><div><dt>Platform</dt><dd>Web</dd></div><div><dt>Client</dt><dd>SEDA Malaysia</dd></div></dl>
     </div>
   </div>
+  <div class="wrap case-cover hero-in" style="--d:4; view-transition-name: media-seda"><div data-parallax="-0.05"><div class="cover-browser"><div class="browser "><div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i></div><div class="browser-body"><img src="images/seda-public-dashboard.webp" width="1443" height="897" alt="SEDA STAR public portal with training statistics and a course calendar" fetchpriority="high" decoding="async"></div></div></div></div></div>
 </section>
-
-<section class="cs-block">
-  <div class="wrap">
-    <div class="reveal" style="max-width: 640px;">
-      <p class="meta-label">Outcome</p>
-      <h2>A full prototype set for a five-role platform.</h2>
-      <p class="body-m">Every screen across all five roles was delivered as a working prototype, from public registration through to admin reporting, giving the development team a complete, spec-accurate reference to build from.</p>
-    </div>
-  </div>
+<div class="case-body" data-bg="#17205c" data-accent="#8fb0ff">
+<section class="scene split">
+  <div class="wrap scene-grid"><div class="scene-text"><p class="eyebrow accent" data-reveal>The context</p><h2 class="h2" data-reveal><span class="sr-only">Renewable energy training, spread across five roles.</span><span class="lines" aria-hidden="true"><span class="w"><span>Renewable</span></span> <span class="w"><span>energy</span></span> <span class="w"><span>training,</span></span> <span class="w"><span>spread</span></span> <span class="w"><span>across</span></span> <span class="w"><span>five</span></span> <span class="w"><span>roles.</span></span> </span></h2><p data-reveal>SEDA Malaysia runs certified training for the country&#x27;s renewable energy and energy-efficiency industry. The system needed to serve five different audiences at once: public applicants browsing courses, SEDA admins running the whole programme, trainers marking attendance, training partners submitting content, and participants tracking their own progress.</p></div><div class="scene-media" data-reveal="clip"><button type="button" class="shot wide" data-shot="seda" data-full="images/seda-admin-dashboard.webp" data-alt="SEDA Admin dashboard with cumulative training chart and data table" data-cursor-text="Zoom"><img src="images/seda-admin-dashboard.webp" width="1440" height="1080" alt="SEDA Admin dashboard with cumulative training chart and data table" loading="lazy" decoding="async"></button></div></div>
 </section>
-
-<div class="wrap cs-next">
-  <a href="case-napz.html">
-    <div class="cs-next-label">Next case study</div>
-    <div class="cs-next-title">NapzBox <span>&rarr;</span></div>
-  </a>
-  <a href="contact.html" class="btn btn-ghost">Get in touch</a>
+<section class="scene split is-flip">
+  <div class="wrap scene-grid"><div class="scene-text"><p class="eyebrow accent" data-reveal>What I designed</p><h2 class="h2" data-reveal><span class="sr-only">One system, five dashboards.</span><span class="lines" aria-hidden="true"><span class="w"><span>One</span></span> <span class="w"><span>system,</span></span> <span class="w"><span>five</span></span> <span class="w"><span>dashboards.</span></span> </span></h2><ul class="ticks" data-reveal><li>Role-based dashboards for SEDA Admin, Public, Participant, Trainer, and Training Partner, each built around what that audience needs to do first.</li><li>User registration and profile management, from public sign-up through to admin approval and role assignment.</li><li>Training and event management, question banks, and exam result tracking, end to end.</li><li>Reporting views built on the same cumulative training data admins already see on their own dashboard.</li></ul></div><div class="scene-media" data-reveal="clip"><button type="button" class="shot wide" data-shot="seda" data-full="images/seda-trainer-dashboard.webp" data-alt="SEDA Trainer dashboard showing training schedule and history tables" data-cursor-text="Zoom"><img src="images/seda-trainer-dashboard.webp" width="1440" height="1080" alt="SEDA Trainer dashboard showing training schedule and history tables" loading="lazy" decoding="async"></button></div></div>
+</section>
+<section class="scene">
+  <div class="wrap"><div class="scene-text wide"><p class="eyebrow accent" data-reveal>Designed from a spec, screen by screen</p><h2 class="h2" data-reveal><span class="sr-only">Consistent across five very different jobs to be done.</span><span class="lines" aria-hidden="true"><span class="w"><span>Consistent</span></span> <span class="w"><span>across</span></span> <span class="w"><span>five</span></span> <span class="w"><span>very</span></span> <span class="w"><span>different</span></span> <span class="w"><span>jobs</span></span> <span class="w"><span>to</span></span> <span class="w"><span>be</span></span> <span class="w"><span>done.</span></span> </span></h2><p data-reveal>Working at Seetru Studio alongside a Lead Designer and Project Manager, I translated a detailed requirement specification into prototypes for every screen, keeping registration, training management, and exam tracking consistent with each other even as the audience changed from screen to screen.</p></div><div class="shots n3" data-reveal="clip"><button type="button" class="shot wide" data-shot="seda" data-full="images/seda-user-registration.webp" data-alt="SEDA User Registration Management table" data-cursor-text="Zoom"><img src="images/seda-user-registration.webp" width="1440" height="560" alt="SEDA User Registration Management table" loading="lazy" decoding="async"></button><button type="button" class="shot wide" data-shot="seda" data-full="images/seda-training-mgmt.webp" data-alt="SEDA Training Management upcoming training list" data-cursor-text="Zoom"><img src="images/seda-training-mgmt.webp" width="1440" height="700" alt="SEDA Training Management upcoming training list" loading="lazy" decoding="async"></button><button type="button" class="shot wide" data-shot="seda" data-full="images/seda-exam-result.webp" data-alt="SEDA Exam Result status tracking table" data-cursor-text="Zoom"><img src="images/seda-exam-result.webp" width="1440" height="850" alt="SEDA Exam Result status tracking table" loading="lazy" decoding="async"></button></div></div>
+</section>
+<section class="scene">
+  <div class="wrap"><div class="scene-text wide"><p class="eyebrow accent" data-reveal>Outcome</p><h2 class="h2" data-reveal><span class="sr-only">A full prototype set for a five-role platform.</span><span class="lines" aria-hidden="true"><span class="w"><span>A</span></span> <span class="w"><span>full</span></span> <span class="w"><span>prototype</span></span> <span class="w"><span>set</span></span> <span class="w"><span>for</span></span> <span class="w"><span>a</span></span> <span class="w"><span>five-role</span></span> <span class="w"><span>platform.</span></span> </span></h2><p data-reveal>Every screen across all five roles was delivered as a working prototype, from public registration through to admin reporting, giving the development team a complete, spec-accurate reference to build from.</p></div></div>
+</section>
 </div>
-
-<footer>
-  <div class="wrap">
-    <div class="footer-row">
-      <div class="logotype">mahfudh<span>.</span></div>
-      <div class="footer-links">
-        <a href="index.html#work">Work</a>
-        <a href="about.html">About</a>
-        <a href="https://www.linkedin.com/in/mahfudhkho/" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="mailto:mahfudhkhoiri2906@gmail.com">Email</a>
-      </div>
-    </div>
-    <p class="footer-fine">Mahfudh Khoiri Amran, product designer based in Medan, Indonesia. Available for select freelance and full-time roles.</p>
+<a class="next" href="case-napz.html" data-bg="#4a2a0e" data-accent="#ffb54d" data-cursor-text="Next">
+  <span class="wrap next-inner">
+    <span class="eyebrow">Next project</span>
+    <span class="next-name">NapzBox <svg class="arr" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    <span class="next-tag">self-check-in for a smart pod hotel.</span>
+  </span>
+</a>
+</main>
+<footer class="foot" data-bg="#0c0c0e" data-accent="#9db4ff">
+  <div class="wrap foot-grid">
+    <div><p class="eyebrow">Mahfudh Khoiri Amran</p><p class="foot-fine">Product designer based in Medan, Indonesia. Available for select freelance and full-time roles.</p></div>
+    <nav class="foot-links" aria-label="Footer">
+      <a href="index.html#work">Work</a><a href="about.html">About</a><a href="exploratory.html">Exploratory</a><a href="contact.html">Contact</a>
+      <a href="https://www.linkedin.com/in/mahfudhkho/" target="_blank" rel="noopener">LinkedIn ↗</a><a href="mailto:mahfudhkhoiri2906@gmail.com">Email</a><a href="play/">Play the portfolio</a>
+    </nav>
+    <p class="foot-time">Medan · <span data-clock>--:--</span> <span class="muted">UTC+7</span></p>
   </div>
+  <p class="foot-mark" aria-hidden="true">mahfudh<span>.</span></p>
 </footer>
-
-<script src="script.js?v=22"></script>
+<dialog class="dlg cv" data-cv aria-labelledby="cv-title">
+  <div class="dlg-panel">
+    <button type="button" class="dlg-x" data-cv-close aria-label="Close">✕</button>
+    <div data-cv-step="request">
+      <p class="eyebrow">Download CV</p>
+      <h2 id="cv-title" class="dlg-title">Request access.</h2>
+      <p class="dlg-copy">Leave your name and email, I review each request myself and email you a one-time passcode to unlock the download.</p>
+      <form class="form" data-cv-request-form novalidate>
+        <label class="field"><span>Name</span><input type="text" name="name" autocomplete="name" placeholder="Your name" required></label>
+        <label class="field"><span>Email</span><input type="email" name="email" autocomplete="email" placeholder="you@email.com" required></label>
+        <p class="form-error" data-cv-request-error role="alert" hidden></p>
+        <button type="submit" class="pill pill-ink">Request access</button>
+      </form>
+      <button type="button" class="text-link" data-cv-goto="verify">Already have a passcode?</button>
+    </div>
+    <div data-cv-step="sent" hidden>
+      <p class="eyebrow">Download CV</p>
+      <h2 class="dlg-title">Request sent.</h2>
+      <p class="dlg-copy">I'll review it shortly. Once approved, a passcode will land in your inbox, enter it below to download.</p>
+      <button type="button" class="pill pill-ink" data-cv-goto="verify">Enter passcode</button>
+    </div>
+    <div data-cv-step="verify" hidden>
+      <p class="eyebrow">Download CV</p>
+      <h2 class="dlg-title">Enter your passcode.</h2>
+      <p class="dlg-copy">Check your email for the passcode once your request has been approved.</p>
+      <form class="form" data-cv-verify-form novalidate>
+        <label class="field"><span>Email</span><input type="email" name="email" autocomplete="email" placeholder="you@email.com" required></label>
+        <label class="field"><span>Passcode</span><input class="code-input" type="text" name="passcode" inputmode="numeric" pattern="[0-9]*" maxlength="6" placeholder="000000" autocomplete="one-time-code" required></label>
+        <p class="form-error" data-cv-verify-error role="alert" hidden></p>
+        <button type="submit" class="pill pill-ink">Unlock &amp; download</button>
+      </form>
+      <button type="button" class="text-link" data-cv-goto="request">Need to request access instead?</button>
+    </div>
+  </div>
+</dialog>
+<dialog class="dlg viewer" data-lb aria-label="Screen viewer">
+  <div class="viewer-top"><span class="viewer-count" data-lb-count>01 / 01</span><span class="viewer-cap" data-lb-cap></span><button type="button" class="viewer-x" data-lb-close>Close</button></div>
+  <figure class="viewer-stage" data-lb-stage></figure>
+  <button type="button" class="viewer-nav prev" data-lb-prev aria-label="Previous screen">←</button>
+  <button type="button" class="viewer-nav next" data-lb-next aria-label="Next screen">→</button>
+</dialog>
+<script src="script.js?v=r3-2" defer></script>
 </body>
 </html>

@@ -1,166 +1,122 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" style="--bg:#0b1a36;--accent:#6d93ff">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<meta http-equiv="Pragma" content="no-cache">
-<meta http-equiv="Expires" content="0">
-<title>RiverLens - Case Study - Mahfudh Khoiri Amran</title>
-<meta name="description" content="Designing the marketing site and client product UI for RiverLens, a Kuala Lumpur software house.">
-<link rel="stylesheet" href="styles.css?v=80">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RiverLens — Case study — Mahfudh Khoiri Amran</title>
+<meta name="description" content="A Kuala Lumpur software house that designs, builds, and runs software for brands, agencies, and public institutions across Malaysia. I own UI/UX for the studio&#x27;s own marketing site and for the client products it ships.">
+<meta name="theme-color" content="#0b1a36">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&family=Onest:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="styles.css?v=r3-2">
+<script>document.documentElement.classList.add('js');</script>
 </head>
-<body>
-<div class="ambient-bg" aria-hidden="true"><div class="ambient-layer a"></div><div class="ambient-layer b"></div><span class="firefly" style="top:15%;left:10%;animation-delay:0s,.8s;"></span><span class="firefly m2" style="top:60%;left:6%;animation-delay:3s,2s;"></span><span class="firefly m3 cool" style="top:25%;left:85%;animation-delay:6s,.3s;"></span><span class="firefly m4" style="top:80%;left:75%;animation-delay:2s,3.5s;"></span><span class="firefly m2 cool" style="top:45%;left:50%;animation-delay:9s,1.5s;"></span><span class="firefly" style="top:70%;left:30%;animation-delay:5s,2.8s;"></span><span class="firefly m3" style="top:10%;left:55%;animation-delay:1s,4s;"></span><span class="firefly m4 cool" style="top:90%;left:15%;animation-delay:7s,.6s;"></span><span class="firefly m2" style="top:35%;left:92%;animation-delay:4s,3s;"></span><span class="firefly m3" style="top:55%;left:20%;animation-delay:8s,1s;"></span></div>
-<div class="scroll-sentinel" aria-hidden="true"></div>
-<div class="page-transition" aria-hidden="true">
-  <span class="pt-cell"></span><span class="pt-cell"></span><span class="pt-cell"></span><span class="pt-cell"></span>
-  <span class="pt-cell"></span><span class="pt-cell"></span><span class="pt-cell"></span><span class="pt-cell"></span>
-  <span class="pt-cell"></span><span class="pt-cell"></span><span class="pt-cell"></span><span class="pt-cell"></span>
-  <span class="pt-cell"></span><span class="pt-cell"></span><span class="pt-cell"></span><span class="pt-cell"></span>
-</div>
-
-<nav class="site-nav">
-  <div class="wrap">
-    <a href="index.html" class="logotype">mahfudh<span>.</span></a>
-    <div class="nav-links">
-      <a href="index.html#work">Work</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </div>
-    <div class="nav-right">
-      <a href="play/" class="btn btn-accent nav-play" aria-label="Play the interactive portfolio">▶ Play<span class="nav-play-long"> the portfolio</span></a>
-      <button class="nav-burger" data-nav-burger aria-label="Open menu" aria-expanded="false">
-        <span class="burger-line"></span><span class="burger-line"></span><span class="burger-line"></span>
-      </button>
-    </div>
-  </div>
-  </nav>
-<div class="mobile-sheet" data-mobile-sheet>
-  <div class="mobile-sheet-links">
-    <a href="index.html#work">Work</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </div>
-  <a href="contact.html" class="btn btn-primary mobile-sheet-cta">Get in touch</a>
-</div>
-
-<header class="cs-header">
-  <div class="wrap">
-    <a href="index.html#work" class="cs-back"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 6l-6 6 6 6"/></svg> Back to work</a>
-    <p class="meta-label">Case study - Web platform &amp; design system</p>
-    <h1 style="margin-top: 12px;"><em>RiverLens</em>, the studio and its shipped work.</h1>
-    <p class="body-l cs-summary">A Kuala Lumpur software house that designs, builds, and runs software for brands, agencies, and public institutions across Malaysia. I own UI/UX for the studio's own marketing site and for the client products it ships.</p>
-    <dl class="cs-meta">
-      <div><dt>Role</dt><dd>Creative Designer, Fulltime</dd></div>
-      <div><dt>Timeline</dt><dd>Feb 2025 - Present</dd></div>
-      <div><dt>Platform</dt><dd>Web &amp; Mobile</dd></div>
-      <div><dt>Collaborators</dt><dd>Product, Tech, Marketing</dd></div>
-    </dl>
+<body class="is-case">
+<a class="skip" href="#main">Skip to content</a>
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor" data-cursor aria-hidden="true"><span data-cursor-label></span></div>
+<header class="top" data-top>
+  <a class="wordmark" href="index.html" aria-label="mahfudh, home">mahfudh<span>.</span></a>
+  <nav class="nav" aria-label="Primary"><a class="nav-link is-on" aria-current="page" href="index.html#work"><span>Work</span></a><a class="nav-link" href="about.html"><span>About</span></a><a class="nav-link" href="exploratory.html"><span>Exploratory</span></a><a class="nav-link" href="contact.html"><span>Contact</span></a></nav>
+  <div class="top-right">
+    <a class="play" href="play/"><svg class="arr" viewBox="0 0 20 20" aria-hidden="true"><path d="M6 4v12l10-6Z" fill="currentColor"/></svg><span>Play</span></a>
+    <button type="button" class="pill pill-paper" data-cv-open data-magnetic>Request CV</button>
+    <button type="button" class="menu-btn" data-menu aria-expanded="false" aria-controls="menu"><span class="sr-only">Menu</span><i></i><i></i></button>
   </div>
 </header>
-
-<div class="wrap">
-  <div class="cs-cover reveal">
-    <div class="device-mockup">
-      <div class="device-stage">
-        <div class="device-screen" style="aspect-ratio: 1440 / 900;">
-          <video autoplay muted loop playsinline preload="auto" poster="images/riverlens-dashboard-dark.png" aria-label="RiverLens product tour: homepage dashboard, services, works, and about pages">
-            <source src="images/riverlens-tour.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="device-base"></div>
-      </div>
-    </div>
-  </div>
+<div class="menu" id="menu" data-menu-panel hidden>
+  <nav aria-label="Mobile"><a class="menu-link" href="index.html#work" style="--i:0">Work</a><a class="menu-link" href="about.html" style="--i:1">About</a><a class="menu-link" href="exploratory.html" style="--i:2">Exploratory</a><a class="menu-link" href="contact.html" style="--i:3">Contact</a></nav>
+  <div class="menu-foot"><button type="button" class="pill pill-paper" data-cv-open>Request CV</button><a class="pill pill-line" href="play/"><svg class="arr" viewBox="0 0 20 20" aria-hidden="true"><path d="M6 4v12l10-6Z" fill="currentColor"/></svg> Play the portfolio</a></div>
 </div>
+<main id="main">
 
-<section class="cs-block" style="border-top: none;">
-  <div class="wrap cs-block-grid">
-    <div class="reveal">
-      <p class="meta-label">The context</p>
-      <h2>Software that keeps client businesses moving.</h2>
-      <p class="body-m">RiverLens ships mobile apps, web platforms, and enterprise systems for government agencies, manufacturers, and lifestyle brands, including MIDA, MATRADE, Hitachi, Panasonic, and the Royal Embassy of Saudi Arabia. My work covers the full UI/UX loop: research, wireframes, and interface design, plus keeping the studio's own site current as a live record of what's shipped.</p>
-    </div>
-    <div class="cs-shot reveal">
-      <img src="images/riverlens-about-dark.png" alt="RiverLens about page">
-    </div>
-  </div>
-</section>
-
-<section class="cs-block">
-  <div class="wrap cs-block-grid">
-    <div class="reveal">
-      <p class="meta-label">What I designed</p>
-      <h2>A studio site built like a product.</h2>
-      <ul class="cs-list">
-        <li>Home and positioning, rewritten around what clients actually ask before hiring a software house.</li>
-        <li>A services page and FAQ that pre-answers scope, timeline, and IP questions.</li>
-        <li>A works archive where every shipped product gets its own detailed case study page.</li>
-        <li>A contact flow with a real response commitment, plus full light and dark theming throughout.</li>
-      </ul>
-    </div>
-    <div class="cs-shot reveal">
-      <img src="images/riverlens-contact-dark.png" alt="RiverLens contact page with project enquiry form">
-    </div>
-  </div>
-</section>
-
-<section class="cs-block">
+<section class="case-hero" data-bg="#0b1a36" data-accent="#6d93ff">
   <div class="wrap">
-    <div class="section-head reveal">
-      <p class="meta-label">Nine products, one design language</p>
-      <h2>Different brands, the same interaction discipline.</h2>
-      <p class="body-m">Beyond the studio site, I design the UI for the client products RiverLens builds: Alafasy, a prayer-times companion app; Dockpilot, an AI-powered SSH agent for Mac, iPhone, and Watch; Gajee.co, HR and payroll software for Malaysian SMEs; KienkoPet, e-commerce operations for a pet-care brand; and Nuzio, a personalised news reader. Each has its own brand, but shares the same components, spacing, and dark-mode behaviour underneath.</p>
-    </div>
-    <div class="cs-shot-row thirds">
-      <div class="cs-shot reveal"><img src="images/riverlens-alafasy-dark.png" alt="Alafasy case study page"></div>
-      <div class="cs-shot reveal"><img src="images/riverlens-dockpilot-dark.png" alt="Dockpilot case study page"></div>
-      <div class="cs-shot reveal"><img src="images/riverlens-gajee-dark.png" alt="Gajee.co case study page"></div>
-    </div>
-    <div class="cs-shot-row" style="margin-top: 24px;">
-      <div class="cs-shot reveal"><img src="images/riverlens-kienkopet-dark.png" alt="KienkoPet case study page"></div>
-      <div class="cs-shot reveal"><img src="images/riverlens-nuzio-dark.png" alt="Nuzio case study page"></div>
+    <p class="crumbs hero-in" style="--d:0"><a href="index.html#work">Work</a> <span aria-hidden="true">/</span> Web platform &amp; design system</p>
+    <h1 class="case-title"><span class="sr-only">RiverLens</span><span class="hl" aria-hidden="true"><span style="--d:1">RiverLens</span></span></h1>
+    <p class="case-tag hero-in" style="--d:2">the studio and its shipped work.</p>
+    <div class="case-intro hero-in" style="--d:3">
+      <p class="lede">A Kuala Lumpur software house that designs, builds, and runs software for brands, agencies, and public institutions across Malaysia. I own UI/UX for the studio&#x27;s own marketing site and for the client products it ships.</p>
+      <dl class="case-meta"><div><dt>Role</dt><dd>Creative Designer, Fulltime</dd></div><div><dt>Timeline</dt><dd>Feb 2025 - Present</dd></div><div><dt>Platform</dt><dd>Web &amp; Mobile</dd></div><div><dt>Collaborators</dt><dd>Product, Tech, Marketing</dd></div></dl>
     </div>
   </div>
+  <div class="wrap case-cover hero-in" style="--d:4; view-transition-name: media-riverlens"><div data-parallax="-0.05"><div class="cover-browser"><div class="browser "><div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i></div><div class="browser-body"><video autoplay muted loop playsinline preload="auto" poster="images/riverlens-dashboard-dark.webp" data-autoplay aria-label="RiverLens product tour: homepage dashboard, services, works, and about pages"><source src="images/riverlens-tour.mp4" type="video/mp4"></video></div></div></div></div></div>
 </section>
-
-<section class="cs-block">
-  <div class="wrap cs-block-grid">
-    <div class="reveal">
-      <p class="meta-label">Outcome</p>
-      <h2>A living archive, not a portfolio deck.</h2>
-      <p class="body-m">The works page updates as new client work ships, so it stays an honest, current record instead of a handful of old screenshots. Internally, it also doubles as the reference for how the studio's own design system should look and behave across a very different set of businesses.</p>
-    </div>
-    <div class="cs-shot reveal">
-      <img src="images/riverlens-services-dark.png" alt="RiverLens services page">
-    </div>
-  </div>
+<div class="case-body" data-bg="#0b1a36" data-accent="#6d93ff">
+<section class="scene split">
+  <div class="wrap scene-grid"><div class="scene-text"><p class="eyebrow accent" data-reveal>The context</p><h2 class="h2" data-reveal><span class="sr-only">Software that keeps client businesses moving.</span><span class="lines" aria-hidden="true"><span class="w"><span>Software</span></span> <span class="w"><span>that</span></span> <span class="w"><span>keeps</span></span> <span class="w"><span>client</span></span> <span class="w"><span>businesses</span></span> <span class="w"><span>moving.</span></span> </span></h2><p data-reveal>RiverLens ships mobile apps, web platforms, and enterprise systems for government agencies, manufacturers, and lifestyle brands, including MIDA, MATRADE, Hitachi, Panasonic, and the Royal Embassy of Saudi Arabia. My work covers the full UI/UX loop: research, wireframes, and interface design, plus keeping the studio&#x27;s own site current as a live record of what&#x27;s shipped.</p></div><div class="scene-media" data-reveal="clip"><button type="button" class="shot wide" data-shot="riverlens" data-full="images/riverlens-about-dark.webp" data-alt="RiverLens about page" data-cursor-text="Zoom"><img src="images/riverlens-about-dark.webp" width="1440" height="900" alt="RiverLens about page" loading="lazy" decoding="async"></button></div></div>
 </section>
-
-<div class="wrap cs-next">
-  <a href="case-arafa.html">
-    <div class="cs-next-label">Next case study</div>
-    <div class="cs-next-title">Arafa <span>&rarr;</span></div>
-  </a>
-  <a href="contact.html" class="btn btn-ghost">Get in touch</a>
+<section class="scene split is-flip">
+  <div class="wrap scene-grid"><div class="scene-text"><p class="eyebrow accent" data-reveal>What I designed</p><h2 class="h2" data-reveal><span class="sr-only">A studio site built like a product.</span><span class="lines" aria-hidden="true"><span class="w"><span>A</span></span> <span class="w"><span>studio</span></span> <span class="w"><span>site</span></span> <span class="w"><span>built</span></span> <span class="w"><span>like</span></span> <span class="w"><span>a</span></span> <span class="w"><span>product.</span></span> </span></h2><ul class="ticks" data-reveal><li>Home and positioning, rewritten around what clients actually ask before hiring a software house.</li><li>A services page and FAQ that pre-answers scope, timeline, and IP questions.</li><li>A works archive where every shipped product gets its own detailed case study page.</li><li>A contact flow with a real response commitment, plus full light and dark theming throughout.</li></ul></div><div class="scene-media" data-reveal="clip"><button type="button" class="shot wide" data-shot="riverlens" data-full="images/riverlens-contact-dark.webp" data-alt="RiverLens contact page with project enquiry form" data-cursor-text="Zoom"><img src="images/riverlens-contact-dark.webp" width="1440" height="900" alt="RiverLens contact page with project enquiry form" loading="lazy" decoding="async"></button></div></div>
+</section>
+<section class="scene">
+  <div class="wrap"><div class="scene-text wide"><p class="eyebrow accent" data-reveal>Nine products, one design language</p><h2 class="h2" data-reveal><span class="sr-only">Different brands, the same interaction discipline.</span><span class="lines" aria-hidden="true"><span class="w"><span>Different</span></span> <span class="w"><span>brands,</span></span> <span class="w"><span>the</span></span> <span class="w"><span>same</span></span> <span class="w"><span>interaction</span></span> <span class="w"><span>discipline.</span></span> </span></h2><p data-reveal>Beyond the studio site, I design the UI for the client products RiverLens builds: Alafasy, a prayer-times companion app; Dockpilot, an AI-powered SSH agent for Mac, iPhone, and Watch; Gajee.co, HR and payroll software for Malaysian SMEs; KienkoPet, e-commerce operations for a pet-care brand; and Nuzio, a personalised news reader. Each has its own brand, but shares the same components, spacing, and dark-mode behaviour underneath.</p></div><div class="shots n3" data-reveal="clip"><button type="button" class="shot wide" data-shot="riverlens" data-full="images/riverlens-alafasy-dark.webp" data-alt="Alafasy case study page" data-cursor-text="Zoom"><img src="images/riverlens-alafasy-dark.webp" width="1440" height="900" alt="Alafasy case study page" loading="lazy" decoding="async"></button><button type="button" class="shot wide" data-shot="riverlens" data-full="images/riverlens-dockpilot-dark.webp" data-alt="Dockpilot case study page" data-cursor-text="Zoom"><img src="images/riverlens-dockpilot-dark.webp" width="1440" height="900" alt="Dockpilot case study page" loading="lazy" decoding="async"></button><button type="button" class="shot wide" data-shot="riverlens" data-full="images/riverlens-gajee-dark.webp" data-alt="Gajee.co case study page" data-cursor-text="Zoom"><img src="images/riverlens-gajee-dark.webp" width="1440" height="900" alt="Gajee.co case study page" loading="lazy" decoding="async"></button></div><div class="shots n2" data-reveal="clip"><button type="button" class="shot wide" data-shot="riverlens" data-full="images/riverlens-kienkopet-dark.webp" data-alt="KienkoPet case study page" data-cursor-text="Zoom"><img src="images/riverlens-kienkopet-dark.webp" width="1440" height="900" alt="KienkoPet case study page" loading="lazy" decoding="async"></button><button type="button" class="shot wide" data-shot="riverlens" data-full="images/riverlens-nuzio-dark.webp" data-alt="Nuzio case study page" data-cursor-text="Zoom"><img src="images/riverlens-nuzio-dark.webp" width="1440" height="900" alt="Nuzio case study page" loading="lazy" decoding="async"></button></div></div>
+</section>
+<section class="scene split is-flip">
+  <div class="wrap scene-grid"><div class="scene-text"><p class="eyebrow accent" data-reveal>Outcome</p><h2 class="h2" data-reveal><span class="sr-only">A living archive, not a portfolio deck.</span><span class="lines" aria-hidden="true"><span class="w"><span>A</span></span> <span class="w"><span>living</span></span> <span class="w"><span>archive,</span></span> <span class="w"><span>not</span></span> <span class="w"><span>a</span></span> <span class="w"><span>portfolio</span></span> <span class="w"><span>deck.</span></span> </span></h2><p data-reveal>The works page updates as new client work ships, so it stays an honest, current record instead of a handful of old screenshots. Internally, it also doubles as the reference for how the studio&#x27;s own design system should look and behave across a very different set of businesses.</p></div><div class="scene-media" data-reveal="clip"><button type="button" class="shot wide" data-shot="riverlens" data-full="images/riverlens-services-dark.webp" data-alt="RiverLens services page" data-cursor-text="Zoom"><img src="images/riverlens-services-dark.webp" width="1440" height="900" alt="RiverLens services page" loading="lazy" decoding="async"></button></div></div>
+</section>
 </div>
-
-<footer>
-  <div class="wrap">
-    <div class="footer-row">
-      <div class="logotype">mahfudh<span>.</span></div>
-      <div class="footer-links">
-        <a href="index.html#work">Work</a>
-        <a href="about.html">About</a>
-        <a href="https://www.linkedin.com/in/mahfudhkho/" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="mailto:mahfudhkhoiri2906@gmail.com">Email</a>
-      </div>
-    </div>
-    <p class="footer-fine">Mahfudh Khoiri Amran, product designer based in Medan, Indonesia. Available for select freelance and full-time roles.</p>
+<a class="next" href="case-arafa.html" data-bg="#07352a" data-accent="#35e0a5" data-cursor-text="Next">
+  <span class="wrap next-inner">
+    <span class="eyebrow">Next project</span>
+    <span class="next-name">Arafa <svg class="arr" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    <span class="next-tag">a structured way to save for Umrah.</span>
+  </span>
+</a>
+</main>
+<footer class="foot" data-bg="#0c0c0e" data-accent="#9db4ff">
+  <div class="wrap foot-grid">
+    <div><p class="eyebrow">Mahfudh Khoiri Amran</p><p class="foot-fine">Product designer based in Medan, Indonesia. Available for select freelance and full-time roles.</p></div>
+    <nav class="foot-links" aria-label="Footer">
+      <a href="index.html#work">Work</a><a href="about.html">About</a><a href="exploratory.html">Exploratory</a><a href="contact.html">Contact</a>
+      <a href="https://www.linkedin.com/in/mahfudhkho/" target="_blank" rel="noopener">LinkedIn ↗</a><a href="mailto:mahfudhkhoiri2906@gmail.com">Email</a><a href="play/">Play the portfolio</a>
+    </nav>
+    <p class="foot-time">Medan · <span data-clock>--:--</span> <span class="muted">UTC+7</span></p>
   </div>
+  <p class="foot-mark" aria-hidden="true">mahfudh<span>.</span></p>
 </footer>
-
-<script src="script.js?v=22"></script>
+<dialog class="dlg cv" data-cv aria-labelledby="cv-title">
+  <div class="dlg-panel">
+    <button type="button" class="dlg-x" data-cv-close aria-label="Close">✕</button>
+    <div data-cv-step="request">
+      <p class="eyebrow">Download CV</p>
+      <h2 id="cv-title" class="dlg-title">Request access.</h2>
+      <p class="dlg-copy">Leave your name and email, I review each request myself and email you a one-time passcode to unlock the download.</p>
+      <form class="form" data-cv-request-form novalidate>
+        <label class="field"><span>Name</span><input type="text" name="name" autocomplete="name" placeholder="Your name" required></label>
+        <label class="field"><span>Email</span><input type="email" name="email" autocomplete="email" placeholder="you@email.com" required></label>
+        <p class="form-error" data-cv-request-error role="alert" hidden></p>
+        <button type="submit" class="pill pill-ink">Request access</button>
+      </form>
+      <button type="button" class="text-link" data-cv-goto="verify">Already have a passcode?</button>
+    </div>
+    <div data-cv-step="sent" hidden>
+      <p class="eyebrow">Download CV</p>
+      <h2 class="dlg-title">Request sent.</h2>
+      <p class="dlg-copy">I'll review it shortly. Once approved, a passcode will land in your inbox, enter it below to download.</p>
+      <button type="button" class="pill pill-ink" data-cv-goto="verify">Enter passcode</button>
+    </div>
+    <div data-cv-step="verify" hidden>
+      <p class="eyebrow">Download CV</p>
+      <h2 class="dlg-title">Enter your passcode.</h2>
+      <p class="dlg-copy">Check your email for the passcode once your request has been approved.</p>
+      <form class="form" data-cv-verify-form novalidate>
+        <label class="field"><span>Email</span><input type="email" name="email" autocomplete="email" placeholder="you@email.com" required></label>
+        <label class="field"><span>Passcode</span><input class="code-input" type="text" name="passcode" inputmode="numeric" pattern="[0-9]*" maxlength="6" placeholder="000000" autocomplete="one-time-code" required></label>
+        <p class="form-error" data-cv-verify-error role="alert" hidden></p>
+        <button type="submit" class="pill pill-ink">Unlock &amp; download</button>
+      </form>
+      <button type="button" class="text-link" data-cv-goto="request">Need to request access instead?</button>
+    </div>
+  </div>
+</dialog>
+<dialog class="dlg viewer" data-lb aria-label="Screen viewer">
+  <div class="viewer-top"><span class="viewer-count" data-lb-count>01 / 01</span><span class="viewer-cap" data-lb-cap></span><button type="button" class="viewer-x" data-lb-close>Close</button></div>
+  <figure class="viewer-stage" data-lb-stage></figure>
+  <button type="button" class="viewer-nav prev" data-lb-prev aria-label="Previous screen">←</button>
+  <button type="button" class="viewer-nav next" data-lb-next aria-label="Next screen">→</button>
+</dialog>
+<script src="script.js?v=r3-2" defer></script>
 </body>
 </html>

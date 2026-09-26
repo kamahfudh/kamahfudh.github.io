@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" style="--bg:#0c0c0e;--accent:#9db4ff">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <script>
 // First-time visitors land on the playable portfolio at play/. It sets mk-seen-game, so after one visit
 // (or when arriving from another page of this site, or via a #section link) the homepage shows as normal.
@@ -16,429 +16,327 @@
   } catch (e) { /* storage blocked: show the homepage */ }
 })();
 </script>
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<meta http-equiv="Pragma" content="no-cache">
-<meta http-equiv="Expires" content="0">
-<title>Mahfudh Khoiri Amran - Product Designer</title>
+<title>Mahfudh Khoiri Amran — UI/UX &amp; Product Designer</title>
 <meta name="description" content="Mahfudh Khoiri Amran is a product designer based in Medan, Indonesia, shipping web and mobile UI for a Kuala Lumpur software house and independent Islamic-tech products.">
-<link rel="stylesheet" href="styles.css?v=80">
+<meta name="theme-color" content="#0c0c0e">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&family=Onest:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="styles.css?v=r3-2">
+<script>document.documentElement.classList.add('js');</script>
 </head>
-<body>
-<div class="ambient-bg" aria-hidden="true"><div class="ambient-layer a"></div><div class="ambient-layer b"></div><span class="firefly" style="top:15%;left:10%;animation-delay:0s,.8s;"></span><span class="firefly m2" style="top:60%;left:6%;animation-delay:3s,2s;"></span><span class="firefly m3 cool" style="top:25%;left:85%;animation-delay:6s,.3s;"></span><span class="firefly m4" style="top:80%;left:75%;animation-delay:2s,3.5s;"></span><span class="firefly m2 cool" style="top:45%;left:50%;animation-delay:9s,1.5s;"></span><span class="firefly" style="top:70%;left:30%;animation-delay:5s,2.8s;"></span><span class="firefly m3" style="top:10%;left:55%;animation-delay:1s,4s;"></span><span class="firefly m4 cool" style="top:90%;left:15%;animation-delay:7s,.6s;"></span><span class="firefly m2" style="top:35%;left:92%;animation-delay:4s,3s;"></span><span class="firefly m3" style="top:55%;left:20%;animation-delay:8s,1s;"></span></div>
-<div class="scroll-sentinel" aria-hidden="true"></div>
-<div class="page-transition" aria-hidden="true">
-  <span class="pt-cell"></span><span class="pt-cell"></span><span class="pt-cell"></span><span class="pt-cell"></span>
-  <span class="pt-cell"></span><span class="pt-cell"></span><span class="pt-cell"></span><span class="pt-cell"></span>
-  <span class="pt-cell"></span><span class="pt-cell"></span><span class="pt-cell"></span><span class="pt-cell"></span>
-  <span class="pt-cell"></span><span class="pt-cell"></span><span class="pt-cell"></span><span class="pt-cell"></span>
-</div>
-
-<nav class="site-nav">
-  <div class="wrap">
-    <a href="index.html" class="logotype">mahfudh<span>.</span></a>
-    <div class="nav-links">
-      <a href="index.html#work" class="is-active">Work</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </div>
-    <div class="nav-right">
-      <a href="play/" class="btn btn-accent nav-play" aria-label="Play the interactive portfolio">▶ Play<span class="nav-play-long"> the portfolio</span></a>
-      <button class="nav-burger" data-nav-burger aria-label="Open menu" aria-expanded="false">
-        <span class="burger-line"></span><span class="burger-line"></span><span class="burger-line"></span>
-      </button>
-    </div>
-  </div>
-  </nav>
-<div class="mobile-sheet" data-mobile-sheet>
-  <div class="mobile-sheet-links">
-    <a href="index.html#work">Work</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </div>
-  <a href="contact.html" class="btn btn-primary mobile-sheet-cta">Get in touch</a>
-</div>
-
-<header class="hero">
-  <div class="wrap hero-grid">
-    <div>
-      <h1 class="hero-fade" style="animation-delay:0.05s">Creating <em class="type-cycle"><span class="type-text" data-words="UI/UX,Mobile,Finest,Website,Product" aria-hidden="true">UI/UX</span><span class="type-cursor" aria-hidden="true"></span></em><span class="sr-only">UI/UX</span><br>design and experiences.</h1>
-      <p class="body-l hero-fade" style="animation-delay:0.16s">A product designer in Medan, Indonesia, shipping web and mobile UI for a KL software house and independent Islamic-tech products.</p>
-      <div class="hero-ctas hero-fade" style="animation-delay:0.27s">
-        <a href="#work" class="btn btn-accent">View work</a>
-        <a href="contact.html" class="btn btn-ghost">Get in touch</a>
-        <button type="button" class="btn btn-primary" data-cv-modal-open>Download CV</button>
-      </div>
-      <dl class="hero-stats hero-fade" style="animation-delay:0.36s">
-        <div><dt>Based</dt><dd>Medan, Indonesia</dd></div>
-        <div><dt>Focus</dt><dd>Product UI/UX, Design Systems</dd></div>
-        <div><dt>Experience</dt><dd>3+ years, freelance &amp; in-house</dd></div>
-        <div><dt>Open for</dt><dd>Freelance and full-time roles</dd></div>
-      </dl>
-    </div>
-    <div class="hero-visual hero-fade" style="animation-delay:0.22s">
-      <div class="hero-mobile-peek">
-        <img src="images/alafasy-mockup-dark.png" alt="Alafasy prayer times app shown in an iPhone frame">
-        <img src="images/ommri-homepage-mockup.png" alt="Ommri splash screen shown in an iPhone frame">
-        <img src="images/thenoor-mockup.png" alt="TheNoor home dashboard shown in an iPhone frame">
-      </div>
-      <div class="mockup">
-        <div class="browser-frame">
-          <div class="browser-chrome">
-            <span></span><span></span><span></span>
-            <div class="hero-chrome-label">
-              <span>RiverLens</span>
-              <span>Arafa</span>
-              <span>SEDA</span>
-              <span>NapzBox</span>
-            </div>
-          </div>
-          <div class="hero-cycle">
-            <img src="images/riverlens-dashboard-dark.png" alt="RiverLens homepage dashboard">
-            <img src="images/arafa-hero.png" alt="Arafa, a Shariah-compliant Umrah savings app, hero screen">
-            <img src="images/seda-public-dashboard.png" alt="SEDA STAR public training portal">
-            <img src="images/napz-home.png" alt="NapzBox homepage hero with a live-style booking widget">
-          </div>
-        </div>
-      </div>
-      <div class="hero-badge">
-        <div class="num">5</div>
-        <div class="cap">Shipped products across fintech, government, hospitality, and mobile</div>
-      </div>
-    </div>
+<body class="is-home">
+<a class="skip" href="#main">Skip to content</a>
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor" data-cursor aria-hidden="true"><span data-cursor-label></span></div>
+<header class="top" data-top>
+  <a class="wordmark" href="index.html" aria-label="mahfudh, home">mahfudh<span>.</span></a>
+  <nav class="nav" aria-label="Primary"><a class="nav-link is-on" aria-current="page" href="index.html#work"><span>Work</span></a><a class="nav-link" href="about.html"><span>About</span></a><a class="nav-link" href="exploratory.html"><span>Exploratory</span></a><a class="nav-link" href="contact.html"><span>Contact</span></a></nav>
+  <div class="top-right">
+    <a class="play" href="play/"><svg class="arr" viewBox="0 0 20 20" aria-hidden="true"><path d="M6 4v12l10-6Z" fill="currentColor"/></svg><span>Play</span></a>
+    <button type="button" class="pill pill-paper" data-cv-open data-magnetic>Request CV</button>
+    <button type="button" class="menu-btn" data-menu aria-expanded="false" aria-controls="menu"><span class="sr-only">Menu</span><i></i><i></i></button>
   </div>
 </header>
+<div class="menu" id="menu" data-menu-panel hidden>
+  <nav aria-label="Mobile"><a class="menu-link" href="index.html#work" style="--i:0">Work</a><a class="menu-link" href="about.html" style="--i:1">About</a><a class="menu-link" href="exploratory.html" style="--i:2">Exploratory</a><a class="menu-link" href="contact.html" style="--i:3">Contact</a></nav>
+  <div class="menu-foot"><button type="button" class="pill pill-paper" data-cv-open>Request CV</button><a class="pill pill-line" href="play/"><svg class="arr" viewBox="0 0 20 20" aria-hidden="true"><path d="M6 4v12l10-6Z" fill="currentColor"/></svg> Play the portfolio</a></div>
+</div>
+<main id="main">
 
-<section id="work">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <p class="meta-label">Selected work</p>
-      <h2>Five products, five different worlds.</h2>
-      <p class="body-m">Each one shipped end to end: research, wireframes, UI, and a working build or live product on the other side.</p>
-    </div>
-
-    <div class="work-segment reveal"><h3>Website design</h3></div>
-
-    <div class="feature-case reveal">
-      <div class="feature-case-media mockup">
-        <div class="browser-frame">
-          <div class="browser-chrome"><span></span><span></span><span></span></div>
-          <div class="reel" style="aspect-ratio: 1440 / 900;">
-            <div class="reel-indicator"><span class="dot"></span>Product tour</div>
-            <video autoplay muted loop playsinline preload="auto" poster="images/riverlens-dashboard-dark.png">
-              <source src="images/riverlens-tour.mp4" type="video/mp4">
-            </video>
-          </div>
-        </div>
-      </div>
-      <div class="feature-case-body">
-        <div>
-          <div class="feature-tags"><span class="tag">Web platform</span><span class="tag">Design system</span><span class="tag">2025-present</span></div>
-          <h3>RiverLens, the studio and its shipped work</h3>
-          <p class="body-m">As Creative Designer at this Kuala Lumpur software house, I design the studio's own marketing site and the UI behind nine shipped client products, from Islamic lifestyle apps to HR software and e-commerce tools.</p>
-        </div>
-        <a href="case-riverlens.html" class="case-link">View case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+<section class="hero" data-bg="#0c0c0e" data-accent="#9db4ff">
+  <div class="aura" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow hero-in" style="--d:0">Mahfudh Khoiri Amran · Product designer, Medan</p>
+      <h1 class="hero-title"><span class="sr-only">Creating UI/UX design and experiences.</span>
+        <span class="hl" aria-hidden="true"><span style="--d:1">Creating</span></span>
+        <span class="hl" aria-hidden="true"><span style="--d:2"><em class="rot" data-rotate="UI/UX,Mobile,Finest,Website,Product"><span class="is-on">UI/UX</span></em> design</span></span>
+        <span class="hl" aria-hidden="true"><span style="--d:3">and experiences.</span></span>
+      </h1>
+      <p class="hero-lede hero-in" style="--d:4">A product designer in Medan, Indonesia, shipping web and mobile UI for a KL software house and independent Islamic-tech products.</p>
+      <div class="hero-ctas hero-in" style="--d:5">
+        <a class="pill pill-paper" href="#work" data-magnetic>View work <svg class="arr" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="pill pill-line" href="contact.html">Get in touch</a>
+        <button type="button" class="pill pill-line" data-cv-open>Request CV</button>
       </div>
     </div>
-
-    <div class="work-grid" style="margin-top: 64px;">
-      <div class="work-card reveal">
-        <div class="work-card-media mockup">
-          <div class="browser-frame">
-            <div class="browser-chrome"><span></span><span></span><span></span></div>
-            <div class="mockup-screen"><img src="images/arafa-hero.png" alt="Arafa Umrah savings app hero"></div>
-          </div>
-        </div>
-        <div class="feature-tags"><span class="tag">Fintech</span><span class="tag">Islamic finance</span></div>
-        <h3>Arafa, a structured way to save for Umrah</h3>
-        <p class="body-m">A savings and booking platform helping Muslim families plan Umrah with transparent, Shariah-compliant packages.</p>
-        <a href="case-arafa.html" class="case-link">View case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      </div>
-      <div class="work-card reveal">
-        <div class="work-card-media mockup">
-          <div class="browser-frame">
-            <div class="browser-chrome"><span></span><span></span><span></span></div>
-            <div class="mockup-screen"><img src="images/seda-public-dashboard.png" alt="SEDA STAR public training portal"></div>
-          </div>
-        </div>
-        <div class="feature-tags"><span class="tag">Government</span><span class="tag">Freelance</span></div>
-        <h3>SEDA, a training system for renewable energy</h3>
-        <p class="body-m">A five-role platform for Malaysia's energy authority, from public course registration to admin reporting.</p>
-        <a href="case-seda.html" class="case-link">View case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      </div>
-      <div class="work-card reveal">
-        <div class="work-card-media mockup">
-          <div class="browser-frame">
-            <div class="browser-chrome"><span></span><span></span><span></span></div>
-            <div class="mockup-screen"><img src="images/napz-home.png" alt="NapzBox homepage hero with a live-style booking widget"></div>
-          </div>
-        </div>
-        <div class="feature-tags"><span class="tag">Hospitality</span><span class="tag">Freelance</span></div>
-        <h3>NapzBox, self-check-in for a smart pod hotel</h3>
-        <p class="body-m">A booking platform for Malaysia's first smart pod hotel, from room search through to self-check-in.</p>
-        <a href="case-napz.html" class="case-link">View case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      </div>
-      <div class="work-card reveal">
-        <div class="work-card-media mockup">
-          <div class="browser-frame">
-            <div class="browser-chrome"><span></span><span></span><span></span></div>
-            <div class="mockup-screen"><img src="images/thenoor-web-hero.jpg" alt="TheNoor website homepage hero"></div>
-          </div>
-        </div>
-        <div class="feature-tags"><span class="tag">Marketing site</span><span class="tag">Freelance</span></div>
-        <h3>TheNoor &amp; NoorCoffee, one company's website and its coffee sub-brand</h3>
-        <p class="body-m">The marketing site for TheNoor, plus NoorCoffee, its franchise sub-brand, complete with a cafe-partner application flow.</p>
-        <a href="case-noorcoffee.html" class="case-link">View case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      </div>
-    </div>
-
-    <div class="work-segment reveal"><h3>Mobile design</h3></div>
-
-    <div class="feature-mobile reveal">
-      <div class="phone-mockup">
-        <img src="images/alafasy-mockup-dark.png" alt="Alafasy prayer times home screen, dark mode, shown in an iPhone frame">
-      </div>
-      <div class="feature-case-body" style="align-items: flex-start; flex-direction: column; height: 100%; justify-content: center;">
-        <div>
-          <div class="feature-tags"><span class="tag">Mobile app</span><span class="tag">Cross-platform</span><span class="tag">Live on 3 app stores</span></div>
-          <h3>Alafasy, a lifetime spiritual compass in your pocket</h3>
-          <p class="body-m">A prayer-times, Qur'an, and dhikr companion app shipped as part of RiverLens' product lineup, live on the App Store, Play Store, and AppGallery with adaptive sky-toned theming that shifts with the time of day.</p>
-        </div>
-        <a href="case-alafasy.html" class="case-link" style="margin-top: 22px;">View case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      </div>
-    </div>
-
-    <div class="feature-mobile reverse reveal" style="margin-top: 56px;">
-      <div class="feature-case-body" style="align-items: flex-start; flex-direction: column; height: 100%; justify-content: center;">
-        <div>
-          <div class="feature-tags"><span class="tag">Mobile app</span><span class="tag">Two-sided marketplace</span><span class="tag">Ommri project</span></div>
-          <h3>Ommri, Badal Umrah performed on your behalf, verified end to end</h3>
-          <p class="body-m">A two-sided marketplace connecting customers who've booked a Badal Umrah package with verified performers in Mecca, with GPS-tracked rituals and recorded proof at every step.</p>
-        </div>
-        <a href="case-ommri.html" class="case-link" style="margin-top: 22px;">View case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      </div>
-      <div class="phone-mockup">
-        <img src="images/ommri-homepage-mockup.png" alt="Ommri splash screen shown in a realistic iPhone frame">
-      </div>
-    </div>
-
-    <div class="feature-mobile reveal" style="margin-top: 56px;">
-      <div class="phone-mockup">
-        <img src="images/thenoor-mockup.png" alt="TheNoor home dashboard shown in a realistic iPhone frame">
-      </div>
-      <div class="feature-case-body" style="align-items: flex-start; flex-direction: column; height: 100%; justify-content: center;">
-        <div>
-          <div class="feature-tags"><span class="tag">Mobile app</span><span class="tag">Freelance</span><span class="tag">Muslim lifestyle</span></div>
-          <h3>TheNoor, a Muslim lifestyle app built around daily habits</h3>
-          <p class="body-m">An all-in-one Islamic lifestyle app bundling prayer tools, an AI-powered Qur'an memorization checker, mood-based wellness, and a membership tier that layers in donation and Takaful insurance.</p>
-        </div>
-        <a href="case-thenoor.html" class="case-link" style="margin-top: 22px;">View case study <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <div class="section-head reveal">
-      <h2>A few places I've designed for.</h2>
-      <p class="body-m">Since 2022 I've worked across freelance and in-house design roles, most of it inside Islamic-tech products, moving between mobile apps, web platforms, and the design systems that hold them together.</p>
-    </div>
-    <div class="exp-list">
-      <div class="exp-row reveal">
-        <div class="exp-when">2025-present</div>
-        <div><div class="exp-title">Creative Designer, Fulltime</div><div class="exp-org">RiverLens Sdn Bhd, Selangor</div></div>
-      </div>
-      <div class="exp-row reveal">
-        <div class="exp-when">2023-2025</div>
-        <div><div class="exp-title">UI/UX Designer, Freelance</div><div class="exp-org">Noor Luminous Sdn Bhd, TheNoor App</div></div>
-      </div>
-      <div class="exp-row reveal">
-        <div class="exp-when">2024</div>
-        <div><div class="exp-title">UI/UX Designer, Freelance</div><div class="exp-org">NAPZ Holding Berhad</div></div>
-      </div>
-      <div class="exp-row reveal">
-        <div class="exp-when">2022-2023</div>
-        <div><div class="exp-title">UI/UX Designer, Freelance &amp; Internship</div><div class="exp-org">Seetru Studio &amp; Noor Luminous</div></div>
-      </div>
-    </div>
-    <a href="about.html" class="case-link" style="margin-top: 32px;">Full experience &amp; education <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <div class="section-head reveal">
-      <h2>What I bring to a project.</h2>
-      <p class="body-m">Three overlapping skill sets that show up in most of the work above.</p>
-    </div>
-    <div class="cap-list">
-      <div class="cap-row reveal">
-        <span class="cap-index">01</span>
-        <h3>Interface design</h3>
-        <div>
-          <p class="body-m">Mobile and web UI built in Figma, from low-fidelity wireframes through to production-ready screens.</p>
-          <div class="cap-tags"><span class="tag">Mobile UI</span><span class="tag">Web UI</span><span class="tag">Design Systems</span><span class="tag">Prototyping</span></div>
-        </div>
-      </div>
-      <div class="cap-row reveal">
-        <span class="cap-index">02</span>
-        <h3>Research &amp; testing</h3>
-        <div>
-          <p class="body-m">Usability testing and lightweight field research, mostly focused on Indonesian and Malaysian users.</p>
-          <div class="cap-tags"><span class="tag">User Research</span><span class="tag">Usability Testing</span><span class="tag">Cross-cultural Design</span></div>
-        </div>
-      </div>
-      <div class="cap-row reveal">
-        <span class="cap-index">03</span>
-        <h3>Working with teams</h3>
-        <div>
-          <p class="body-m">Sitting inside product, tech, and marketing conversations, not just receiving a brief and disappearing.</p>
-          <div class="cap-tags"><span class="tag">Stakeholder Alignment</span><span class="tag">Cross-functional Collaboration</span><span class="tag">Design Handoff</span></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <div class="section-head exp-head reveal">
-      <div>
-        <h2>A few exploratory designs.</h2>
-        <p class="body-m">Self-directed practice outside of client work, across a few different product spaces.</p>
-      </div>
-      <a href="exploratory.html" class="section-link">View all 7 projects <span>&rarr;</span></a>
-    </div>
-    <div class="exp-preview">
-      <a class="exp-card reveal" href="exploratory.html">
-        <div class="exp-frame">
-          <div class="exp-track">
-            <img src="images/exp-sneakershub-app-home.jpg" alt="SneakersHub mobile app home screen">
-            <img src="images/exp-sneakershub-app-details.jpg" alt="SneakersHub mobile app Air Jordan 1 detail screen">
-            <img src="images/exp-sneakershub-app-details2.jpg" alt="SneakersHub mobile app Nike Air Force 1 detail screen">
-            <img src="images/exp-sneakershub-app-home.jpg" alt="" aria-hidden="true">
-          </div>
-        </div>
-        <div class="bento-caption"><div class="name">SneakersHub</div><div class="desc">Sneaker e-commerce mobile app</div></div>
+    <div class="hero-stage" data-stage>
+      <a class="laptop" href="case-riverlens.html" data-depth="0.02" data-cursor-text="View" aria-label="RiverLens case study">
+        <span class="laptop-screen"><video muted loop playsinline autoplay preload="auto" poster="images/riverlens-dashboard-dark.webp" data-autoplay aria-label="RiverLens product tour"><source src="images/riverlens-tour.mp4" type="video/mp4"></video></span><span class="laptop-base" aria-hidden="true"></span>
       </a>
-      <a class="exp-card reveal" href="exploratory.html">
-        <div class="exp-frame">
-          <div class="exp-track">
-            <img src="images/exp-onthego-home.jpg" alt="On The Go app home screen with hotel search">
-            <img src="images/exp-onthego-details.jpg" alt="On The Go app hotel detail screen">
-            <img src="images/exp-onthego-room.jpg" alt="On The Go app room selection screen">
-            <img src="images/exp-onthego-home.jpg" alt="" aria-hidden="true">
-          </div>
-        </div>
-        <div class="bento-caption"><div class="name">On The Go</div><div class="desc">Travel &amp; hotel-booking app</div></div>
-      </a>
-      <a class="exp-card reveal" href="exploratory.html">
-        <div class="exp-frame">
-          <div class="exp-track">
-            <img src="images/exp-readme-mybook.jpg" alt="ReadMe app My Book library screen">
-            <img src="images/exp-readme-onsale.jpg" alt="ReadMe app On-Sale collection screen">
-            <img src="images/exp-readme-readpage.jpg" alt="ReadMe app Harry Potter book detail screen">
-            <img src="images/exp-readme-mybook.jpg" alt="" aria-hidden="true">
-          </div>
-        </div>
-        <div class="bento-caption"><div class="name">ReadMe</div><div class="desc">E-book reader &amp; store app</div></div>
-      </a>
-      <a class="exp-card reveal" href="exploratory.html">
-        <div class="exp-frame">
-          <div class="exp-track">
-            <img src="images/exp-eventforyou-home.jpg" alt="Event For You app home feed with upcoming events">
-            <img src="images/exp-eventforyou-details.jpg" alt="Event For You app Joji concert detail screen">
-            <img src="images/exp-eventforyou-ticket.jpg" alt="Event For You app digital ticket with QR code">
-            <img src="images/exp-eventforyou-home.jpg" alt="" aria-hidden="true">
-          </div>
-        </div>
-        <div class="bento-caption"><div class="name">Event For You</div><div class="desc">Event discovery &amp; ticketing app</div></div>
-      </a>
+      <div class="hp hp-0" data-depth="0.040"><img src="images/alafasy-mockup-dark.webp" width="863" height="1800" alt="" fetchpriority="high" decoding="async"></div><div class="hp hp-1" data-depth="0.065"><img src="images/ommri-homepage-mockup.webp" width="863" height="1800" alt="" fetchpriority="high" decoding="async"></div><div class="hp hp-2" data-depth="0.090"><img src="images/thenoor-mockup.webp" width="863" height="1800" alt="" fetchpriority="high" decoding="async"></div>
     </div>
+  </div>
+  <dl class="wrap hero-facts hero-in" style="--d:6">
+    <div><dt>Based</dt><dd>Medan, Indonesia</dd></div>
+    <div><dt>Focus</dt><dd>Product UI/UX, Design Systems</dd></div>
+    <div><dt>Experience</dt><dd>3+ years, freelance &amp; in-house</dd></div>
+    <div><dt>Open for</dt><dd>Freelance and full-time roles</dd></div>
+  </dl>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="marquee-track"><span>RiverLens</span><i aria-hidden="true">✦</i><span>Arafa</span><i aria-hidden="true">✦</i><span>SEDA</span><i aria-hidden="true">✦</i><span>NapzBox</span><i aria-hidden="true">✦</i><span>TheNoor &amp; NoorCoffee</span><i aria-hidden="true">✦</i><span>Alafasy</span><i aria-hidden="true">✦</i><span>Ommri</span><i aria-hidden="true">✦</i><span>TheNoor</span><i aria-hidden="true">✦</i><span>RiverLens</span><i aria-hidden="true">✦</i><span>Arafa</span><i aria-hidden="true">✦</i><span>SEDA</span><i aria-hidden="true">✦</i><span>NapzBox</span><i aria-hidden="true">✦</i><span>TheNoor &amp; NoorCoffee</span><i aria-hidden="true">✦</i><span>Alafasy</span><i aria-hidden="true">✦</i><span>Ommri</span><i aria-hidden="true">✦</i><span>TheNoor</span><i aria-hidden="true">✦</i></div></div>
+
+<section class="work-intro" id="work" data-bg="#0c0c0e" data-accent="#9db4ff">
+  <div class="wrap">
+    <p class="eyebrow" data-reveal>Selected work</p>
+    <h2 class="display" data-reveal><span class="sr-only">Eight products, eight different worlds.</span><span class="lines" aria-hidden="true"><span class="w"><span>Eight</span></span> <span class="w"><span>products,</span></span> <span class="w"><span>eight</span></span> <span class="w"><span>different</span></span> <span class="w"><span>worlds.</span></span> </span></h2>
+    <p class="lede" data-reveal>Each one shipped end to end: research, wireframes, UI, and a working build or live product on the other side.</p>
   </div>
 </section>
 
-<section>
-  <div class="wrap">
-    <div class="cta-band reveal">
-      <div>
-        <h2>Have a project in mind? Let's talk.</h2>
-        <p class="body-m" style="margin-top: 12px;">Open to freelance UI/UX work and full-time product design roles, especially where research and craft both matter.</p>
-      </div>
-      <a href="contact.html" class="btn btn-primary">Get in touch</a>
+<div class="work">
+  <nav class="work-index" aria-label="Projects"><p class="eyebrow">Index</p><ol><li><a href="#p-riverlens" data-index-link="0"><span>01</span>RiverLens</a></li><li><a href="#p-arafa" data-index-link="1"><span>02</span>Arafa</a></li><li><a href="#p-seda" data-index-link="2"><span>03</span>SEDA</a></li><li><a href="#p-napz" data-index-link="3"><span>04</span>NapzBox</a></li><li><a href="#p-noorcoffee" data-index-link="4"><span>05</span>TheNoor &amp; NoorCoffee</a></li><li><a href="#p-alafasy" data-index-link="5"><span>06</span>Alafasy</a></li><li><a href="#p-ommri" data-index-link="6"><span>07</span>Ommri</a></li><li><a href="#p-thenoor" data-index-link="7"><span>08</span>TheNoor</a></li></ol></nav>
+  <section class="project" id="p-riverlens" data-bg="#0b1a36" data-accent="#6d93ff" data-index="0">
+  <div class="wrap project-grid">
+    <div class="project-text">
+      <p class="project-num" data-reveal><span>01</span><i></i>2025–now</p>
+      <h3 class="project-name" data-reveal><a href="case-riverlens.html">RiverLens</a></h3>
+      <p class="project-tag" data-reveal>the studio and its shipped work</p>
+      <p class="project-desc" data-reveal>As Creative Designer at this Kuala Lumpur software house, I design the studio&#x27;s own marketing site and the UI behind nine shipped client products, from Islamic lifestyle apps to HR software and e-commerce tools.</p>
+      <div data-reveal><ul class="chips"><li>Web platform</li><li>Design system</li></ul></div>
+      <a class="pill pill-paper project-cta" href="case-riverlens.html" data-reveal data-magnetic>View case study <svg class="arr" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
     </div>
+    <a class="project-media" href="case-riverlens.html" data-cursor-text="View" aria-label="RiverLens case study" style="view-transition-name: media-riverlens"><div class="stack web" data-parallax-group>
+      <div class="browser br-back"><div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i></div><div class="browser-body"><img src="images/riverlens-about-dark.webp" width="1440" height="900" alt="RiverLens secondary page" loading="lazy" decoding="async"></div></div>
+      <div class="browser br-front"><div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i></div><div class="browser-body"><video muted loop playsinline preload="none" poster="images/riverlens-dashboard-dark.webp" data-inview-play aria-label="RiverLens product tour: homepage dashboard, services, works, and about pages"><source src="images/riverlens-tour.mp4" type="video/mp4"></video></div></div>
+    </div></a>
   </div>
 </section>
-
-<footer>
-  <div class="wrap">
-    <div class="footer-row">
-      <div class="logotype">mahfudh<span>.</span></div>
-      <div class="footer-links">
-        <a href="index.html#work">Work</a>
-        <a href="about.html">About</a>
-        <a href="https://www.linkedin.com/in/mahfudhkho/" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="mailto:mahfudhkhoiri2906@gmail.com">Email</a>
-      </div>
+<section class="project is-flip" id="p-arafa" data-bg="#07352a" data-accent="#35e0a5" data-index="1">
+  <div class="wrap project-grid">
+    <div class="project-text">
+      <p class="project-num" data-reveal><span>02</span><i></i>Concept</p>
+      <h3 class="project-name" data-reveal><a href="case-arafa.html">Arafa</a></h3>
+      <p class="project-tag" data-reveal>a structured way to save for Umrah</p>
+      <p class="project-desc" data-reveal>A savings and booking platform helping Muslim families plan Umrah with transparent, Shariah-compliant packages.</p>
+      <div data-reveal><ul class="chips"><li>Fintech</li><li>Islamic finance</li></ul></div>
+      <a class="pill pill-paper project-cta" href="case-arafa.html" data-reveal data-magnetic>View case study <svg class="arr" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
     </div>
-    <p class="footer-fine">Mahfudh Khoiri Amran, product designer based in Medan, Indonesia. Available for select freelance and full-time roles.</p>
+    <a class="project-media" href="case-arafa.html" data-cursor-text="View" aria-label="Arafa case study" style="view-transition-name: media-arafa"><div class="stack web" data-parallax-group>
+      <div class="browser br-back"><div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i></div><div class="browser-body"><img src="images/arafa-features.webp" width="1440" height="900" alt="Arafa secondary page" loading="lazy" decoding="async"></div></div>
+      <div class="browser br-front"><div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i></div><div class="browser-body"><img src="images/arafa-hero.webp" width="1440" height="900" alt="Arafa homepage hero with savings dashboard mockup" loading="lazy" decoding="async"></div></div>
+    </div></a>
   </div>
-</footer>
-
-<div class="cv-modal" data-cv-modal aria-hidden="true">
-  <div class="cv-modal-backdrop" data-cv-modal-close></div>
-  <div class="cv-modal-panel" role="dialog" aria-modal="true" aria-labelledby="cv-modal-title">
-    <button type="button" class="cv-modal-close" data-cv-modal-close aria-label="Close">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
-    </button>
-
-    <div class="cv-modal-step" data-cv-step="request">
-      <p class="meta-label">Download CV</p>
-      <h3 id="cv-modal-title">Request access.</h3>
-      <p class="body-m">Leave your name and email, I review each request myself and email you a one-time passcode to unlock the download.</p>
-      <form class="contact-form" data-cv-request-form novalidate>
-        <div class="form-field">
-          <label for="cv-req-name">Name</label>
-          <input type="text" id="cv-req-name" name="name" placeholder="Your name" required>
-        </div>
-        <div class="form-field">
-          <label for="cv-req-email">Email</label>
-          <input type="email" id="cv-req-email" name="email" placeholder="you@email.com" required>
-        </div>
-        <p class="cv-modal-error" data-cv-request-error hidden></p>
-        <button type="submit" class="btn btn-primary">Request access</button>
-      </form>
-      <button type="button" class="cv-modal-link" data-cv-goto-verify>Already have a passcode?</button>
+</section>
+<section class="project" id="p-seda" data-bg="#17205c" data-accent="#8fb0ff" data-index="2">
+  <div class="wrap project-grid">
+    <div class="project-text">
+      <p class="project-num" data-reveal><span>03</span><i></i>2023</p>
+      <h3 class="project-name" data-reveal><a href="case-seda.html">SEDA</a></h3>
+      <p class="project-tag" data-reveal>a training system for renewable energy</p>
+      <p class="project-desc" data-reveal>A five-role platform for Malaysia&#x27;s energy authority, from public course registration to admin reporting.</p>
+      <div data-reveal><ul class="chips"><li>Government</li><li>Freelance</li></ul></div>
+      <a class="pill pill-paper project-cta" href="case-seda.html" data-reveal data-magnetic>View case study <svg class="arr" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
     </div>
-
-    <div class="cv-modal-step" data-cv-step="sent" hidden>
-      <p class="meta-label">Download CV</p>
-      <h3>Request sent.</h3>
-      <p class="body-m">I'll review it shortly. Once approved, a passcode will land in your inbox, enter it below to download.</p>
-      <button type="button" class="btn btn-primary" data-cv-goto-verify>Enter passcode</button>
-    </div>
-
-    <div class="cv-modal-step" data-cv-step="verify" hidden>
-      <p class="meta-label">Download CV</p>
-      <h3>Enter your passcode.</h3>
-      <p class="body-m">Check your email for the passcode once your request has been approved.</p>
-      <form class="contact-form" data-cv-verify-form novalidate>
-        <div class="form-field">
-          <label for="cv-ver-email">Email</label>
-          <input type="email" id="cv-ver-email" name="email" placeholder="you@email.com" required>
-        </div>
-        <div class="form-field">
-          <label for="cv-ver-passcode">Passcode</label>
-          <input type="text" id="cv-ver-passcode" name="passcode" inputmode="numeric" pattern="[0-9]*" maxlength="6" placeholder="6-digit code" required>
-        </div>
-        <p class="cv-modal-error" data-cv-verify-error hidden></p>
-        <button type="submit" class="btn btn-primary">Unlock &amp; download</button>
-      </form>
-      <button type="button" class="cv-modal-link" data-cv-goto-request>Need to request access instead?</button>
-    </div>
+    <a class="project-media" href="case-seda.html" data-cursor-text="View" aria-label="SEDA case study" style="view-transition-name: media-seda"><div class="stack web" data-parallax-group>
+      <div class="browser br-back"><div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i></div><div class="browser-body"><img src="images/seda-admin-dashboard.webp" width="1440" height="1080" alt="SEDA secondary page" loading="lazy" decoding="async"></div></div>
+      <div class="browser br-front"><div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i></div><div class="browser-body"><img src="images/seda-public-dashboard.webp" width="1443" height="897" alt="SEDA STAR public portal with training statistics and a course calendar" loading="lazy" decoding="async"></div></div>
+    </div></a>
   </div>
+</section>
+<section class="project is-flip" id="p-napz" data-bg="#4a2a0e" data-accent="#ffb54d" data-index="3">
+  <div class="wrap project-grid">
+    <div class="project-text">
+      <p class="project-num" data-reveal><span>04</span><i></i>2024</p>
+      <h3 class="project-name" data-reveal><a href="case-napz.html">NapzBox</a></h3>
+      <p class="project-tag" data-reveal>self-check-in for a smart pod hotel</p>
+      <p class="project-desc" data-reveal>A booking platform for Malaysia&#x27;s first smart pod hotel, from room search through to self-check-in.</p>
+      <div data-reveal><ul class="chips"><li>Hospitality</li><li>Freelance</li></ul></div>
+      <a class="pill pill-paper project-cta" href="case-napz.html" data-reveal data-magnetic>View case study <svg class="arr" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+    <a class="project-media" href="case-napz.html" data-cursor-text="View" aria-label="NapzBox case study" style="view-transition-name: media-napz"><div class="stack web" data-parallax-group>
+      <div class="browser br-back"><div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i></div><div class="browser-body"><img src="images/napz-about.webp" width="1440" height="1250" alt="NapzBox secondary page" loading="lazy" decoding="async"></div></div>
+      <div class="browser br-front"><div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i></div><div class="browser-body"><img src="images/napz-home.webp" width="1440" height="897" alt="NapzBox homepage hero with a live-style booking widget" loading="lazy" decoding="async"></div></div>
+    </div></a>
+  </div>
+</section>
+<section class="project" id="p-noorcoffee" data-bg="#5e1339" data-accent="#ff7cb8" data-index="4">
+  <div class="wrap project-grid">
+    <div class="project-text">
+      <p class="project-num" data-reveal><span>05</span><i></i>2022–25</p>
+      <h3 class="project-name" data-reveal><a href="case-noorcoffee.html">TheNoor &amp; NoorCoffee</a></h3>
+      <p class="project-tag" data-reveal>one company&#x27;s website and its coffee sub-brand</p>
+      <p class="project-desc" data-reveal>The marketing site for TheNoor, plus NoorCoffee, its franchise sub-brand, complete with a cafe-partner application flow.</p>
+      <div data-reveal><ul class="chips"><li>Marketing site</li><li>Freelance</li></ul></div>
+      <a class="pill pill-paper project-cta" href="case-noorcoffee.html" data-reveal data-magnetic>View case study <svg class="arr" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+    <a class="project-media" href="case-noorcoffee.html" data-cursor-text="View" aria-label="TheNoor &amp; NoorCoffee case study" style="view-transition-name: media-noorcoffee"><div class="stack web" data-parallax-group>
+      <div class="browser br-back"><div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i></div><div class="browser-body"><img src="images/thenoor-web-about.webp" width="1200" height="1458" alt="TheNoor &amp; NoorCoffee secondary page" loading="lazy" decoding="async"></div></div>
+      <div class="browser br-front"><div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i></div><div class="browser-body"><img src="images/thenoor-web-hero.webp" width="1920" height="1272" alt="TheNoor website homepage hero, The Awesome Lifestyle Muslim App" loading="lazy" decoding="async"></div></div>
+    </div></a>
+  </div>
+</section>
+<section class="project is-mobile is-flip" id="p-alafasy" data-bg="#0d2f5c" data-accent="#82caff" data-index="5">
+  <div class="wrap project-grid">
+    <div class="project-text">
+      <p class="project-num" data-reveal><span>06</span><i></i>2025</p>
+      <h3 class="project-name" data-reveal><a href="case-alafasy.html">Alafasy</a></h3>
+      <p class="project-tag" data-reveal>an all-in-one companion for daily Islamic practice</p>
+      <p class="project-desc" data-reveal>A prayer-times, Qur&#x27;an, and dhikr companion app shipped as part of RiverLens&#x27; product lineup, live on the App Store, Play Store, and AppGallery with adaptive sky-toned theming that shifts with the time of day.</p>
+      <div data-reveal><ul class="chips"><li>Mobile app</li><li>Cross-platform</li><li class="live"><i></i>Live on 3 app stores</li></ul></div>
+      <a class="pill pill-paper project-cta" href="case-alafasy.html" data-reveal data-magnetic>View case study <svg class="arr" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+    <a class="project-media" href="case-alafasy.html" data-cursor-text="View" aria-label="Alafasy case study" style="view-transition-name: media-alafasy"><div class="stack phones" data-parallax-group>
+      <div class="phone ph ph-back"><img src="images/alafasy-home-blue.webp" width="820" height="1800" alt="Alafasy screen" loading="lazy" decoding="async"></div>
+      <div class="ph ph-front"><img src="images/alafasy-mockup-dark.webp" width="863" height="1800" alt="Alafasy shown in an iPhone frame" loading="lazy" decoding="async"></div>
+      <div class="phone ph ph-side"><img src="images/alafasy-qiblah-compass2.webp" width="850" height="1800" alt="Alafasy screen" loading="lazy" decoding="async"></div>
+    </div></a>
+  </div>
+</section>
+<section class="project is-mobile" id="p-ommri" data-bg="#6e1a18" data-accent="#ff8a73" data-index="6">
+  <div class="wrap project-grid">
+    <div class="project-text">
+      <p class="project-num" data-reveal><span>07</span><i></i>2025</p>
+      <h3 class="project-name" data-reveal><a href="case-ommri.html">Ommri</a></h3>
+      <p class="project-tag" data-reveal>Badal Umrah, performed on your behalf, verified end to end</p>
+      <p class="project-desc" data-reveal>A two-sided marketplace connecting customers who&#x27;ve booked a Badal Umrah package with verified performers in Mecca, with GPS-tracked rituals and recorded proof at every step.</p>
+      <div data-reveal><ul class="chips"><li>Mobile app</li><li>Two-sided marketplace</li></ul></div>
+      <a class="pill pill-paper project-cta" href="case-ommri.html" data-reveal data-magnetic>View case study <svg class="arr" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+    <a class="project-media" href="case-ommri.html" data-cursor-text="View" aria-label="Ommri case study" style="view-transition-name: media-ommri"><div class="stack phones" data-parallax-group>
+      <div class="phone ph ph-back"><img src="images/ommri-marketplace-packages.webp" width="865" height="1800" alt="Ommri screen" loading="lazy" decoding="async"></div>
+      <div class="ph ph-front"><img src="images/ommri-homepage-mockup.webp" width="863" height="1800" alt="Ommri shown in an iPhone frame" loading="lazy" decoding="async"></div>
+      <div class="phone ph ph-side"><img src="images/ommri-tracking-taskdetail.webp" width="865" height="1800" alt="Ommri screen" loading="lazy" decoding="async"></div>
+    </div></a>
+  </div>
+</section>
+<section class="project is-mobile is-flip" id="p-thenoor" data-bg="#46133c" data-accent="#f184d6" data-index="7">
+  <div class="wrap project-grid">
+    <div class="project-text">
+      <p class="project-num" data-reveal><span>08</span><i></i>2022–25</p>
+      <h3 class="project-name" data-reveal><a href="case-thenoor.html">TheNoor</a></h3>
+      <p class="project-tag" data-reveal>a Muslim lifestyle app built around daily habits</p>
+      <p class="project-desc" data-reveal>An all-in-one Islamic lifestyle app bundling prayer tools, an AI-powered Qur&#x27;an memorization checker, mood-based wellness, and a membership tier that layers in donation and Takaful insurance.</p>
+      <div data-reveal><ul class="chips"><li>Mobile app</li><li>Freelance</li><li>Muslim lifestyle</li></ul></div>
+      <a class="pill pill-paper project-cta" href="case-thenoor.html" data-reveal data-magnetic>View case study <svg class="arr" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+    <a class="project-media" href="case-thenoor.html" data-cursor-text="View" aria-label="TheNoor case study" style="view-transition-name: media-thenoor"><div class="stack phones" data-parallax-group>
+      <div class="phone ph ph-back"><img src="images/thenoor-dashboard-2.webp" width="375" height="812" alt="TheNoor screen" loading="lazy" decoding="async"></div>
+      <div class="ph ph-front"><img src="images/thenoor-mockup.webp" width="863" height="1800" alt="TheNoor shown in an iPhone frame" loading="lazy" decoding="async"></div>
+      <div class="phone ph ph-side"><img src="images/thenoor-verses.webp" width="576" height="1212" alt="TheNoor screen" loading="lazy" decoding="async"></div>
+    </div></a>
+  </div>
+</section>
 </div>
 
-<script src="script.js?v=22"></script>
+<section class="exp" data-bg="#0c0c0e" data-accent="#9db4ff">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow" data-reveal>Experience</p>
+      <h2 class="display" data-reveal><span class="sr-only">A few places I&#x27;ve designed for.</span><span class="lines" aria-hidden="true"><span class="w"><span>A</span></span> <span class="w"><span>few</span></span> <span class="w"><span>places</span></span> <span class="w"><span>I&#x27;ve</span></span> <span class="w"><span>designed</span></span> <span class="w"><span>for.</span></span> </span></h2>
+      <p class="lede" data-reveal>Since 2022 I've worked across freelance and in-house design roles, most of it inside Islamic-tech products, moving between mobile apps, web platforms, and the design systems that hold them together.</p>
+    </div>
+    <ol class="exp-list"><li><a class="exp-row" href="case-riverlens.html" data-preview="images/riverlens-dashboard-dark-thumb.webp" data-room="#0b1a36" data-room-accent="#6d93ff" data-cursor-text="View">
+      <span class="exp-when">2025–now</span><span class="exp-role">Creative Designer, Fulltime</span><span class="exp-org">RiverLens Sdn Bhd, Selangor</span><svg class="arr" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li><li><a class="exp-row" href="case-thenoor.html" data-preview="images/thenoor-mockup-thumb.webp" data-room="#46133c" data-room-accent="#f184d6" data-cursor-text="View">
+      <span class="exp-when">2023–25</span><span class="exp-role">UI/UX Designer, Freelance</span><span class="exp-org">Noor Luminous Sdn Bhd, TheNoor App</span><svg class="arr" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li><li><a class="exp-row" href="case-napz.html" data-preview="images/napz-home-thumb.webp" data-room="#4a2a0e" data-room-accent="#ffb54d" data-cursor-text="View">
+      <span class="exp-when">2024</span><span class="exp-role">UI/UX Designer, Freelance</span><span class="exp-org">NAPZ Holding Berhad</span><svg class="arr" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li><li><a class="exp-row" href="case-seda.html" data-preview="images/seda-public-dashboard-thumb.webp" data-room="#17205c" data-room-accent="#8fb0ff" data-cursor-text="View">
+      <span class="exp-when">2022–23</span><span class="exp-role">UI/UX Designer, Freelance &amp; Internship</span><span class="exp-org">Seetru Studio &amp; Noor Luminous</span><svg class="arr" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li></ol>
+    <a class="pill pill-line" href="about.html" data-reveal>Full experience &amp; education <svg class="arr" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+  </div>
+  <div class="exp-preview" data-exp-preview aria-hidden="true"></div>
+</section>
+
+<section class="caps" data-bg="#151518" data-accent="#9db4ff">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow" data-reveal>Capabilities</p>
+      <h2 class="display" data-reveal><span class="sr-only">What I bring to a project.</span><span class="lines" aria-hidden="true"><span class="w"><span>What</span></span> <span class="w"><span>I</span></span> <span class="w"><span>bring</span></span> <span class="w"><span>to</span></span> <span class="w"><span>a</span></span> <span class="w"><span>project.</span></span> </span></h2>
+      <p class="lede" data-reveal>Three overlapping skill sets that show up in most of the work above.</p>
+    </div>
+    <div class="caps-grid"><div class="cap" data-reveal><h3>Interface design</h3><p>Mobile and web UI built in Figma, from low-fidelity wireframes through to production-ready screens.</p><ul class="chips"><li>Mobile UI</li><li>Web UI</li><li>Design Systems</li><li>Prototyping</li></ul></div><div class="cap" data-reveal><h3>Research &amp; testing</h3><p>Usability testing and lightweight field research, mostly focused on Indonesian and Malaysian users.</p><ul class="chips"><li>User Research</li><li>Usability Testing</li><li>Cross-cultural Design</li></ul></div><div class="cap" data-reveal><h3>Working with teams</h3><p>Sitting inside product, tech, and marketing conversations, not just receiving a brief and disappearing.</p><ul class="chips"><li>Stakeholder Alignment</li><li>Cross-functional Collaboration</li><li>Design Handoff</li></ul></div></div>
+  </div>
+</section>
+
+<section class="drafts-sec" data-bg="#151518" data-accent="#9db4ff">
+  <div class="wrap drafts-head">
+    <div class="sec-head">
+      <p class="eyebrow" data-reveal>Exploratory</p>
+      <h2 class="display" data-reveal><span class="sr-only">A few exploratory designs.</span><span class="lines" aria-hidden="true"><span class="w"><span>A</span></span> <span class="w"><span>few</span></span> <span class="w"><span>exploratory</span></span> <span class="w"><span>designs.</span></span> </span></h2>
+      <p class="lede" data-reveal>Self-directed practice outside of client work, across a few different product spaces.</p>
+    </div>
+    <a class="pill pill-line" href="exploratory.html" data-reveal>View all 7 projects <svg class="arr" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+  </div>
+  <div class="drafts" tabindex="0" aria-label="Exploratory projects"><a class="draft" href="exploratory.html" style="--i:0" data-cursor-text="Open">
+      <span class="draft-screens"><img src="images/exp-sneakershub-app-home-thumb.webp" width="301" height="720" alt="SneakersHub screen" loading="lazy" decoding="async"><img src="images/exp-sneakershub-app-details-thumb.webp" width="301" height="720" alt="SneakersHub screen" loading="lazy" decoding="async"><img src="images/exp-sneakershub-app-details2-thumb.webp" width="301" height="720" alt="SneakersHub screen" loading="lazy" decoding="async"></span>
+      <span class="draft-cap"><b>SneakersHub</b>Sneaker e-commerce mobile app</span></a><a class="draft" href="exploratory.html" style="--i:1" data-cursor-text="Open">
+      <span class="draft-screens"><img src="images/exp-onthego-home-thumb.webp" width="332" height="720" alt="On The Go screen" loading="lazy" decoding="async"><img src="images/exp-onthego-details-thumb.webp" width="332" height="720" alt="On The Go screen" loading="lazy" decoding="async"><img src="images/exp-onthego-room-thumb.webp" width="332" height="720" alt="On The Go screen" loading="lazy" decoding="async"></span>
+      <span class="draft-cap"><b>On The Go</b>Travel &amp; hotel-booking app</span></a><a class="draft" href="exploratory.html" style="--i:2" data-cursor-text="Open">
+      <span class="draft-screens"><img src="images/exp-readme-mybook-thumb.webp" width="332" height="720" alt="ReadMe screen" loading="lazy" decoding="async"><img src="images/exp-readme-onsale-thumb.webp" width="332" height="720" alt="ReadMe screen" loading="lazy" decoding="async"><img src="images/exp-readme-readpage-thumb.webp" width="332" height="720" alt="ReadMe screen" loading="lazy" decoding="async"></span>
+      <span class="draft-cap"><b>ReadMe</b>E-book reader &amp; store app</span></a><a class="draft" href="exploratory.html" style="--i:3" data-cursor-text="Open">
+      <span class="draft-screens"><img src="images/exp-eventforyou-home-thumb.webp" width="332" height="720" alt="Event For You screen" loading="lazy" decoding="async"><img src="images/exp-eventforyou-details-thumb.webp" width="332" height="720" alt="Event For You screen" loading="lazy" decoding="async"><img src="images/exp-eventforyou-ticket-thumb.webp" width="332" height="720" alt="Event For You screen" loading="lazy" decoding="async"></span>
+      <span class="draft-cap"><b>Event For You</b>Event discovery &amp; ticketing app</span></a></div>
+</section>
+
+<section class="cta" data-bg="#0c0c0e" data-accent="#9db4ff">
+  <div class="wrap">
+    <p class="eyebrow" data-reveal>Contact</p>
+    <h2 class="cta-title" data-reveal><span class="sr-only">Have a project in mind?</span><span class="lines" aria-hidden="true"><span class="w"><span>Have</span></span> <span class="w"><span>a</span></span> <span class="w"><span>project</span></span> <span class="w"><span>in</span></span> <span class="w"><span>mind?</span></span> </span> <span class="accent">Let&#x27;s talk.</span></h2>
+    <p class="cta-copy" data-reveal>Open to freelance UI/UX work and full-time product design roles, especially where research and craft both matter.</p>
+    <div class="cta-actions" data-reveal>
+      <a class="orb" href="contact.html" data-magnetic data-cursor-text="Write"><span>Get in touch</span></a>
+      <div class="cta-links">
+        <button type="button" class="copy" data-copy="mahfudhkhoiri2906@gmail.com"><span data-copy-label>mahfudhkhoiri2906@gmail.com</span><small>Copy</small></button>
+        <button type="button" class="pill pill-line" data-cv-open>Request CV</button>
+        <a class="pill pill-line" href="https://www.linkedin.com/in/mahfudhkho/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="foot" data-bg="#0c0c0e" data-accent="#9db4ff">
+  <div class="wrap foot-grid">
+    <div><p class="eyebrow">Mahfudh Khoiri Amran</p><p class="foot-fine">Product designer based in Medan, Indonesia. Available for select freelance and full-time roles.</p></div>
+    <nav class="foot-links" aria-label="Footer">
+      <a href="index.html#work">Work</a><a href="about.html">About</a><a href="exploratory.html">Exploratory</a><a href="contact.html">Contact</a>
+      <a href="https://www.linkedin.com/in/mahfudhkho/" target="_blank" rel="noopener">LinkedIn ↗</a><a href="mailto:mahfudhkhoiri2906@gmail.com">Email</a><a href="play/">Play the portfolio</a>
+    </nav>
+    <p class="foot-time">Medan · <span data-clock>--:--</span> <span class="muted">UTC+7</span></p>
+  </div>
+  <p class="foot-mark" aria-hidden="true">mahfudh<span>.</span></p>
+</footer>
+<dialog class="dlg cv" data-cv aria-labelledby="cv-title">
+  <div class="dlg-panel">
+    <button type="button" class="dlg-x" data-cv-close aria-label="Close">✕</button>
+    <div data-cv-step="request">
+      <p class="eyebrow">Download CV</p>
+      <h2 id="cv-title" class="dlg-title">Request access.</h2>
+      <p class="dlg-copy">Leave your name and email, I review each request myself and email you a one-time passcode to unlock the download.</p>
+      <form class="form" data-cv-request-form novalidate>
+        <label class="field"><span>Name</span><input type="text" name="name" autocomplete="name" placeholder="Your name" required></label>
+        <label class="field"><span>Email</span><input type="email" name="email" autocomplete="email" placeholder="you@email.com" required></label>
+        <p class="form-error" data-cv-request-error role="alert" hidden></p>
+        <button type="submit" class="pill pill-ink">Request access</button>
+      </form>
+      <button type="button" class="text-link" data-cv-goto="verify">Already have a passcode?</button>
+    </div>
+    <div data-cv-step="sent" hidden>
+      <p class="eyebrow">Download CV</p>
+      <h2 class="dlg-title">Request sent.</h2>
+      <p class="dlg-copy">I'll review it shortly. Once approved, a passcode will land in your inbox, enter it below to download.</p>
+      <button type="button" class="pill pill-ink" data-cv-goto="verify">Enter passcode</button>
+    </div>
+    <div data-cv-step="verify" hidden>
+      <p class="eyebrow">Download CV</p>
+      <h2 class="dlg-title">Enter your passcode.</h2>
+      <p class="dlg-copy">Check your email for the passcode once your request has been approved.</p>
+      <form class="form" data-cv-verify-form novalidate>
+        <label class="field"><span>Email</span><input type="email" name="email" autocomplete="email" placeholder="you@email.com" required></label>
+        <label class="field"><span>Passcode</span><input class="code-input" type="text" name="passcode" inputmode="numeric" pattern="[0-9]*" maxlength="6" placeholder="000000" autocomplete="one-time-code" required></label>
+        <p class="form-error" data-cv-verify-error role="alert" hidden></p>
+        <button type="submit" class="pill pill-ink">Unlock &amp; download</button>
+      </form>
+      <button type="button" class="text-link" data-cv-goto="request">Need to request access instead?</button>
+    </div>
+  </div>
+</dialog>
+<dialog class="dlg viewer" data-lb aria-label="Screen viewer">
+  <div class="viewer-top"><span class="viewer-count" data-lb-count>01 / 01</span><span class="viewer-cap" data-lb-cap></span><button type="button" class="viewer-x" data-lb-close>Close</button></div>
+  <figure class="viewer-stage" data-lb-stage></figure>
+  <button type="button" class="viewer-nav prev" data-lb-prev aria-label="Previous screen">←</button>
+  <button type="button" class="viewer-nav next" data-lb-next aria-label="Next screen">→</button>
+</dialog>
+<script src="script.js?v=r3-2" defer></script>
 </body>
 </html>

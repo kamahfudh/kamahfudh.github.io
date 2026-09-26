@@ -1,187 +1,149 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" style="--bg:#1b1f2b;--accent:#9fb4ff">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<meta http-equiv="Pragma" content="no-cache">
-<meta http-equiv="Expires" content="0">
-<title>Exploratory Design - Mahfudh Khoiri Amran</title>
-<meta name="description" content="Personal design explorations outside of client work, across e-commerce, streaming, travel, and ticketing products, by Mahfudh Khoiri Amran.">
-<link rel="stylesheet" href="styles.css?v=80">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exploratory design — Mahfudh Khoiri Amran</title>
+<meta name="description" content="A handful of self-directed explorations across e-commerce, streaming, travel, and ticketing, used to try out product spaces and interaction patterns that don&#x27;t come up in client briefs.">
+<meta name="theme-color" content="#1b1f2b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&family=Onest:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="styles.css?v=r3-2">
+<script>document.documentElement.classList.add('js');</script>
 </head>
-<body>
-<div class="ambient-bg" aria-hidden="true"><div class="ambient-layer a"></div><div class="ambient-layer b"></div><span class="firefly" style="top:15%;left:10%;animation-delay:0s,.8s;"></span><span class="firefly m2" style="top:60%;left:6%;animation-delay:3s,2s;"></span><span class="firefly m3 cool" style="top:25%;left:85%;animation-delay:6s,.3s;"></span><span class="firefly m4" style="top:80%;left:75%;animation-delay:2s,3.5s;"></span><span class="firefly m2 cool" style="top:45%;left:50%;animation-delay:9s,1.5s;"></span><span class="firefly" style="top:70%;left:30%;animation-delay:5s,2.8s;"></span><span class="firefly m3" style="top:10%;left:55%;animation-delay:1s,4s;"></span><span class="firefly m4 cool" style="top:90%;left:15%;animation-delay:7s,.6s;"></span><span class="firefly m2" style="top:35%;left:92%;animation-delay:4s,3s;"></span><span class="firefly m3" style="top:55%;left:20%;animation-delay:8s,1s;"></span></div>
-<div class="scroll-sentinel" aria-hidden="true"></div>
-<div class="page-transition" aria-hidden="true">
-  <span class="pt-cell"></span><span class="pt-cell"></span><span class="pt-cell"></span><span class="pt-cell"></span>
-  <span class="pt-cell"></span><span class="pt-cell"></span><span class="pt-cell"></span><span class="pt-cell"></span>
-  <span class="pt-cell"></span><span class="pt-cell"></span><span class="pt-cell"></span><span class="pt-cell"></span>
-  <span class="pt-cell"></span><span class="pt-cell"></span><span class="pt-cell"></span><span class="pt-cell"></span>
-</div>
-
-<nav class="site-nav">
-  <div class="wrap">
-    <a href="index.html" class="logotype">mahfudh<span>.</span></a>
-    <div class="nav-links">
-      <a href="index.html#work">Work</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </div>
-    <div class="nav-right">
-      <a href="play/" class="btn btn-accent nav-play" aria-label="Play the interactive portfolio">▶ Play<span class="nav-play-long"> the portfolio</span></a>
-      <button class="nav-burger" data-nav-burger aria-label="Open menu" aria-expanded="false">
-        <span class="burger-line"></span><span class="burger-line"></span><span class="burger-line"></span>
-      </button>
-    </div>
-  </div>
-  </nav>
-<div class="mobile-sheet" data-mobile-sheet>
-  <div class="mobile-sheet-links">
-    <a href="index.html#work">Work</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </div>
-  <a href="contact.html" class="btn btn-primary mobile-sheet-cta">Get in touch</a>
-</div>
-
-<header class="cs-header">
-  <div class="wrap">
-    <a href="index.html#work" class="cs-back"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M11 6l-6 6 6 6"/></svg> Back to work</a>
-    <p class="meta-label">Exploratory design</p>
-    <h1 style="margin-top: 12px;">Design practice, outside of client work.</h1>
-    <p class="body-l cs-summary">A handful of self-directed explorations across e-commerce, streaming, travel, and ticketing, used to try out product spaces and interaction patterns that don't come up in client briefs.</p>
+<body class="">
+<a class="skip" href="#main">Skip to content</a>
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor" data-cursor aria-hidden="true"><span data-cursor-label></span></div>
+<header class="top" data-top>
+  <a class="wordmark" href="index.html" aria-label="mahfudh, home">mahfudh<span>.</span></a>
+  <nav class="nav" aria-label="Primary"><a class="nav-link" href="index.html#work"><span>Work</span></a><a class="nav-link" href="about.html"><span>About</span></a><a class="nav-link is-on" aria-current="page" href="exploratory.html"><span>Exploratory</span></a><a class="nav-link" href="contact.html"><span>Contact</span></a></nav>
+  <div class="top-right">
+    <a class="play" href="play/"><svg class="arr" viewBox="0 0 20 20" aria-hidden="true"><path d="M6 4v12l10-6Z" fill="currentColor"/></svg><span>Play</span></a>
+    <button type="button" class="pill pill-paper" data-cv-open data-magnetic>Request CV</button>
+    <button type="button" class="menu-btn" data-menu aria-expanded="false" aria-controls="menu"><span class="sr-only">Menu</span><i></i><i></i></button>
   </div>
 </header>
+<div class="menu" id="menu" data-menu-panel hidden>
+  <nav aria-label="Mobile"><a class="menu-link" href="index.html#work" style="--i:0">Work</a><a class="menu-link" href="about.html" style="--i:1">About</a><a class="menu-link" href="exploratory.html" style="--i:2">Exploratory</a><a class="menu-link" href="contact.html" style="--i:3">Contact</a></nav>
+  <div class="menu-foot"><button type="button" class="pill pill-paper" data-cv-open>Request CV</button><a class="pill pill-line" href="play/"><svg class="arr" viewBox="0 0 20 20" aria-hidden="true"><path d="M6 4v12l10-6Z" fill="currentColor"/></svg> Play the portfolio</a></div>
+</div>
+<main id="main">
 
-<section class="cs-block" style="border-top: none; padding-top: 24px;">
+<section class="page-hero" data-bg="#1b1f2b" data-accent="#9fb4ff">
   <div class="wrap">
-    <div class="section-head reveal">
-      <p class="meta-label">01 - Website</p>
-      <h2>SneakersHub</h2>
-      <p class="body-m" style="max-width: 640px;">A sneaker e-commerce storefront concept, exploring a bold product-hero layout and a dark-to-colour gradient theme per product page.</p>
-    </div>
-    <div class="cs-shot reveal">
-      <img src="images/exp-sneakershub-web.jpg" alt="SneakersHub website hero, Nike Air Jordan product page">
-    </div>
+    <p class="crumbs hero-in" style="--d:0">Exploratory design</p>
+    <h1 class="page-title"><span class="sr-only">Design practice, outside of client work.</span>
+      <span class="hl" aria-hidden="true"><span style="--d:1">Design practice,</span></span>
+      <span class="hl" aria-hidden="true"><span style="--d:2"><em class="accent">outside of client work.</em></span></span></h1>
+    <div class="page-intro hero-in" style="--d:3"><p class="lede">A handful of self-directed explorations across e-commerce, streaming, travel, and ticketing, used to try out product spaces and interaction patterns that don&#x27;t come up in client briefs.</p></div>
   </div>
 </section>
-
-<section class="cs-block">
+<section class="scene explore split" data-bg="#1b1f2b" data-accent="#9fb4ff">
+  <div class="wrap scene-grid">
+    <div class="scene-text"><p class="eyebrow accent" data-reveal>Website</p><h2 class="display" data-reveal><span class="sr-only">SneakersHub</span><span class="lines" aria-hidden="true"><span class="w"><span>SneakersHub</span></span> </span></h2><p data-reveal>A sneaker e-commerce storefront concept, exploring a bold product-hero layout and a dark-to-colour gradient theme per product page.</p></div>
+    <div class="scene-media" data-reveal="clip"><button type="button" class="shot wide" data-shot="exploratory" data-full="images/exp-sneakershub-web.webp" data-alt="SneakersHub website hero, Nike Air Jordan product page" data-cursor-text="Zoom"><img src="images/exp-sneakershub-web.webp" width="1920" height="1333" alt="SneakersHub website hero, Nike Air Jordan product page" loading="lazy" decoding="async"></button></div>
+  </div>
+</section><section class="scene explore" data-bg="#10261f" data-accent="#6fe0b2">
   <div class="wrap">
-    <div class="section-head reveal">
-      <p class="meta-label">02 - Mobile app</p>
-      <h2>SneakersHub, mobile</h2>
-      <p class="body-m" style="max-width: 640px;">The same sneaker storefront as a mobile app, carrying the browse-to-checkout flow from home feed through to product detail.</p>
-    </div>
-    <div class="cs-shot-row thirds reveal">
-      <div class="cs-shot"><img src="images/exp-sneakershub-app-home.jpg" alt="SneakersHub app home feed with trending sneakers"></div>
-      <div class="cs-shot"><img src="images/exp-sneakershub-app-details.jpg" alt="SneakersHub app Air Jordan 1 product detail screen"></div>
-      <div class="cs-shot"><img src="images/exp-sneakershub-app-details2.jpg" alt="SneakersHub app Nike Air Force 1 product detail screen"></div>
-    </div>
+    <div class="scene-text wide"><p class="eyebrow accent" data-reveal>Mobile app</p><h2 class="display" data-reveal><span class="sr-only">SneakersHub, mobile</span><span class="lines" aria-hidden="true"><span class="w"><span>SneakersHub,</span></span> <span class="w"><span>mobile</span></span> </span></h2><p data-reveal>The same sneaker storefront as a mobile app, carrying the browse-to-checkout flow from home feed through to product detail.</p></div>
+    <div class="shots n3 is-tall" data-reveal="clip"><button type="button" class="shot tall" data-shot="exploratory" data-full="images/exp-sneakershub-app-home.webp" data-alt="SneakersHub app home feed with trending sneakers" data-cursor-text="Zoom"><img src="images/exp-sneakershub-app-home.webp" width="752" height="1800" alt="SneakersHub app home feed with trending sneakers" loading="lazy" decoding="async"></button><button type="button" class="shot tall" data-shot="exploratory" data-full="images/exp-sneakershub-app-details.webp" data-alt="SneakersHub app Air Jordan 1 product detail screen" data-cursor-text="Zoom"><img src="images/exp-sneakershub-app-details.webp" width="752" height="1800" alt="SneakersHub app Air Jordan 1 product detail screen" loading="lazy" decoding="async"></button><button type="button" class="shot tall" data-shot="exploratory" data-full="images/exp-sneakershub-app-details2.webp" data-alt="SneakersHub app Nike Air Force 1 product detail screen" data-cursor-text="Zoom"><img src="images/exp-sneakershub-app-details2.webp" width="752" height="1800" alt="SneakersHub app Nike Air Force 1 product detail screen" loading="lazy" decoding="async"></button></div>
+  </div>
+</section><section class="scene explore" data-bg="#2b1a12" data-accent="#ffb27a">
+  <div class="wrap">
+    <div class="scene-text wide"><p class="eyebrow accent" data-reveal>Mobile app</p><h2 class="display" data-reveal><span class="sr-only">On The Go</span><span class="lines" aria-hidden="true"><span class="w"><span>On</span></span> <span class="w"><span>The</span></span> <span class="w"><span>Go</span></span> </span></h2><p data-reveal>A travel and hotel-booking app concept, from destination search through to room detail and booking.</p></div>
+    <div class="shots n3 is-tall" data-reveal="clip"><button type="button" class="shot tall" data-shot="exploratory" data-full="images/exp-onthego-home.webp" data-alt="On The Go app home screen with hotel search" data-cursor-text="Zoom"><img src="images/exp-onthego-home.webp" width="831" height="1800" alt="On The Go app home screen with hotel search" loading="lazy" decoding="async"></button><button type="button" class="shot tall" data-shot="exploratory" data-full="images/exp-onthego-details.webp" data-alt="On The Go app hotel detail screen" data-cursor-text="Zoom"><img src="images/exp-onthego-details.webp" width="831" height="1800" alt="On The Go app hotel detail screen" loading="lazy" decoding="async"></button><button type="button" class="shot tall" data-shot="exploratory" data-full="images/exp-onthego-room.webp" data-alt="On The Go app room selection screen" data-cursor-text="Zoom"><img src="images/exp-onthego-room.webp" width="831" height="1800" alt="On The Go app room selection screen" loading="lazy" decoding="async"></button></div>
+  </div>
+</section><section class="scene explore" data-bg="#261028" data-accent="#f39be0">
+  <div class="wrap">
+    <div class="scene-text wide"><p class="eyebrow accent" data-reveal>Mobile app</p><h2 class="display" data-reveal><span class="sr-only">Toy store</span><span class="lines" aria-hidden="true"><span class="w"><span>Toy</span></span> <span class="w"><span>store</span></span> </span></h2><p data-reveal>A dark-mode collectibles storefront for Funko Pop figures, from browse through to product detail and cart.</p></div>
+    <div class="shots n3 is-tall" data-reveal="clip"><button type="button" class="shot tall" data-shot="exploratory" data-full="images/exp-toystore-home.webp" data-alt="Toy store app home feed with Funko Pop collections" data-cursor-text="Zoom"><img src="images/exp-toystore-home.webp" width="831" height="1800" alt="Toy store app home feed with Funko Pop collections" loading="lazy" decoding="async"></button><button type="button" class="shot tall" data-shot="exploratory" data-full="images/exp-toystore-details.webp" data-alt="Toy store app Buttercup Funko Pop detail screen" data-cursor-text="Zoom"><img src="images/exp-toystore-details.webp" width="831" height="1800" alt="Toy store app Buttercup Funko Pop detail screen" loading="lazy" decoding="async"></button><button type="button" class="shot tall" data-shot="exploratory" data-full="images/exp-toystore-cart.webp" data-alt="Toy store app cart screen" data-cursor-text="Zoom"><img src="images/exp-toystore-cart.webp" width="831" height="1800" alt="Toy store app cart screen" loading="lazy" decoding="async"></button></div>
+  </div>
+</section><section class="scene explore" data-bg="#12202b" data-accent="#8fd3ff">
+  <div class="wrap">
+    <div class="scene-text wide"><p class="eyebrow accent" data-reveal>Mobile app</p><h2 class="display" data-reveal><span class="sr-only">ReadMe</span><span class="lines" aria-hidden="true"><span class="w"><span>ReadMe</span></span> </span></h2><p data-reveal>An e-book reader and store concept, balancing an on-going reading list against on-sale and recommended titles.</p></div>
+    <div class="shots n3 is-tall" data-reveal="clip"><button type="button" class="shot tall" data-shot="exploratory" data-full="images/exp-readme-mybook.webp" data-alt="ReadMe app My Book library screen" data-cursor-text="Zoom"><img src="images/exp-readme-mybook.webp" width="831" height="1800" alt="ReadMe app My Book library screen" loading="lazy" decoding="async"></button><button type="button" class="shot tall" data-shot="exploratory" data-full="images/exp-readme-onsale.webp" data-alt="ReadMe app On-Sale collection screen" data-cursor-text="Zoom"><img src="images/exp-readme-onsale.webp" width="831" height="1800" alt="ReadMe app On-Sale collection screen" loading="lazy" decoding="async"></button><button type="button" class="shot tall" data-shot="exploratory" data-full="images/exp-readme-readpage.webp" data-alt="ReadMe app Harry Potter book detail screen" data-cursor-text="Zoom"><img src="images/exp-readme-readpage.webp" width="831" height="1800" alt="ReadMe app Harry Potter book detail screen" loading="lazy" decoding="async"></button></div>
+  </div>
+</section><section class="scene explore split" data-bg="#2a1016" data-accent="#ff8fa0">
+  <div class="wrap scene-grid">
+    <div class="scene-text"><p class="eyebrow accent" data-reveal>Website</p><h2 class="display" data-reveal><span class="sr-only">Weebo</span><span class="lines" aria-hidden="true"><span class="w"><span>Weebo</span></span> </span></h2><p data-reveal>An anime-streaming site concept, built around a full-bleed featured-title hero and a magazine-style seasonal picks rail.</p></div>
+    <div class="scene-media" data-reveal="clip"><button type="button" class="shot wide" data-shot="exploratory" data-full="images/exp-weebo.webp" data-alt="Weebo anime streaming website hero, Chainsaw Man featured title" data-cursor-text="Zoom"><img src="images/exp-weebo.webp" width="1920" height="1333" alt="Weebo anime streaming website hero, Chainsaw Man featured title" loading="lazy" decoding="async"></button></div>
+  </div>
+</section><section class="scene explore" data-bg="#1d1b2e" data-accent="#c1a8ff">
+  <div class="wrap">
+    <div class="scene-text wide"><p class="eyebrow accent" data-reveal>Mobile app</p><h2 class="display" data-reveal><span class="sr-only">Event For You</span><span class="lines" aria-hidden="true"><span class="w"><span>Event</span></span> <span class="w"><span>For</span></span> <span class="w"><span>You</span></span> </span></h2><p data-reveal>An event-discovery and ticketing app, from a categorised event feed through to a scannable digital ticket.</p></div>
+    <div class="shots n3 is-tall" data-reveal="clip"><button type="button" class="shot tall" data-shot="exploratory" data-full="images/exp-eventforyou-home.webp" data-alt="Event For You app home feed with upcoming events" data-cursor-text="Zoom"><img src="images/exp-eventforyou-home.webp" width="831" height="1800" alt="Event For You app home feed with upcoming events" loading="lazy" decoding="async"></button><button type="button" class="shot tall" data-shot="exploratory" data-full="images/exp-eventforyou-details.webp" data-alt="Event For You app Joji concert detail screen" data-cursor-text="Zoom"><img src="images/exp-eventforyou-details.webp" width="831" height="1800" alt="Event For You app Joji concert detail screen" loading="lazy" decoding="async"></button><button type="button" class="shot tall" data-shot="exploratory" data-full="images/exp-eventforyou-ticket.webp" data-alt="Event For You app digital ticket with QR code" data-cursor-text="Zoom"><img src="images/exp-eventforyou-ticket.webp" width="831" height="1800" alt="Event For You app digital ticket with QR code" loading="lazy" decoding="async"></button></div>
   </div>
 </section>
-
-<section class="cs-block">
+<section class="cta" data-bg="#0c0c0e" data-accent="#9db4ff">
   <div class="wrap">
-    <div class="section-head reveal">
-      <p class="meta-label">03 - Mobile app</p>
-      <h2>On The Go</h2>
-      <p class="body-m" style="max-width: 640px;">A travel and hotel-booking app concept, from destination search through to room detail and booking.</p>
-    </div>
-    <div class="cs-shot-row thirds reveal">
-      <div class="cs-shot"><img src="images/exp-onthego-home.jpg" alt="On The Go app home screen with hotel search"></div>
-      <div class="cs-shot"><img src="images/exp-onthego-details.jpg" alt="On The Go app hotel detail screen"></div>
-      <div class="cs-shot"><img src="images/exp-onthego-room.jpg" alt="On The Go app room selection screen"></div>
-    </div>
-  </div>
-</section>
-
-<section class="cs-block">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <p class="meta-label">04 - Mobile app</p>
-      <h2>Toy store</h2>
-      <p class="body-m" style="max-width: 640px;">A dark-mode collectibles storefront for Funko Pop figures, from browse through to product detail and cart.</p>
-    </div>
-    <div class="cs-shot-row thirds reveal">
-      <div class="cs-shot"><img src="images/exp-toystore-home.jpg" alt="Toy store app home feed with Funko Pop collections"></div>
-      <div class="cs-shot"><img src="images/exp-toystore-details.jpg" alt="Toy store app Buttercup Funko Pop detail screen"></div>
-      <div class="cs-shot"><img src="images/exp-toystore-cart.jpg" alt="Toy store app cart screen"></div>
-    </div>
-  </div>
-</section>
-
-<section class="cs-block">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <p class="meta-label">05 - Mobile app</p>
-      <h2>ReadMe</h2>
-      <p class="body-m" style="max-width: 640px;">An e-book reader and store concept, balancing an on-going reading list against on-sale and recommended titles.</p>
-    </div>
-    <div class="cs-shot-row thirds reveal">
-      <div class="cs-shot"><img src="images/exp-readme-mybook.jpg" alt="ReadMe app My Book library screen"></div>
-      <div class="cs-shot"><img src="images/exp-readme-onsale.jpg" alt="ReadMe app On-Sale collection screen"></div>
-      <div class="cs-shot"><img src="images/exp-readme-readpage.jpg" alt="ReadMe app Harry Potter book detail screen"></div>
-    </div>
-  </div>
-</section>
-
-<section class="cs-block">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <p class="meta-label">06 - Website</p>
-      <h2>Weebo</h2>
-      <p class="body-m" style="max-width: 640px;">An anime-streaming site concept, built around a full-bleed featured-title hero and a magazine-style seasonal picks rail.</p>
-    </div>
-    <div class="cs-shot reveal">
-      <img src="images/exp-weebo.jpg" alt="Weebo anime streaming website hero, Chainsaw Man featured title">
-    </div>
-  </div>
-</section>
-
-<section class="cs-block">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <p class="meta-label">07 - Mobile app</p>
-      <h2>Event For You</h2>
-      <p class="body-m" style="max-width: 640px;">An event-discovery and ticketing app, from a categorised event feed through to a scannable digital ticket.</p>
-    </div>
-    <div class="cs-shot-row thirds reveal">
-      <div class="cs-shot"><img src="images/exp-eventforyou-home.jpg" alt="Event For You app home feed with upcoming events"></div>
-      <div class="cs-shot"><img src="images/exp-eventforyou-details.jpg" alt="Event For You app Joji concert detail screen"></div>
-      <div class="cs-shot"><img src="images/exp-eventforyou-ticket.jpg" alt="Event For You app digital ticket with QR code"></div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <div class="cta-band reveal">
-      <div>
-        <h2>Open to freelance and full-time roles.</h2>
-        <p class="body-m" style="margin-top: 12px;">If any of these directions are useful for a brief you're working on, I'd be glad to talk it through.</p>
-      </div>
-      <a href="contact.html" class="btn btn-primary">Get in touch</a>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="wrap">
-    <div class="footer-row">
-      <div class="logotype">mahfudh<span>.</span></div>
-      <div class="footer-links">
-        <a href="index.html#work">Work</a>
-        <a href="about.html">About</a>
-        <a href="https://www.linkedin.com/in/mahfudhkho/" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="mailto:mahfudhkhoiri2906@gmail.com">Email</a>
+    <p class="eyebrow" data-reveal>Contact</p>
+    <h2 class="cta-title" data-reveal><span class="sr-only">Open to freelance and full-time roles.</span><span class="lines" aria-hidden="true"><span class="w"><span>Open</span></span> <span class="w"><span>to</span></span> <span class="w"><span>freelance</span></span> <span class="w"><span>and</span></span> <span class="w"><span>full-time</span></span> <span class="w"><span>roles.</span></span> </span></h2>
+    <p class="cta-copy" data-reveal>If any of these directions are useful for a brief you&#x27;re working on, I&#x27;d be glad to talk it through.</p>
+    <div class="cta-actions" data-reveal>
+      <a class="orb" href="contact.html" data-magnetic data-cursor-text="Write"><span>Get in touch</span></a>
+      <div class="cta-links">
+        <button type="button" class="copy" data-copy="mahfudhkhoiri2906@gmail.com"><span data-copy-label>mahfudhkhoiri2906@gmail.com</span><small>Copy</small></button>
+        <button type="button" class="pill pill-line" data-cv-open>Request CV</button>
+        <a class="pill pill-line" href="https://www.linkedin.com/in/mahfudhkho/" target="_blank" rel="noopener">LinkedIn ↗</a>
       </div>
     </div>
-    <p class="footer-fine">Mahfudh Khoiri Amran, product designer based in Medan, Indonesia. Available for select freelance and full-time roles.</p>
   </div>
+</section>
+</main>
+<footer class="foot" data-bg="#0c0c0e" data-accent="#9db4ff">
+  <div class="wrap foot-grid">
+    <div><p class="eyebrow">Mahfudh Khoiri Amran</p><p class="foot-fine">Product designer based in Medan, Indonesia. Available for select freelance and full-time roles.</p></div>
+    <nav class="foot-links" aria-label="Footer">
+      <a href="index.html#work">Work</a><a href="about.html">About</a><a href="exploratory.html">Exploratory</a><a href="contact.html">Contact</a>
+      <a href="https://www.linkedin.com/in/mahfudhkho/" target="_blank" rel="noopener">LinkedIn ↗</a><a href="mailto:mahfudhkhoiri2906@gmail.com">Email</a><a href="play/">Play the portfolio</a>
+    </nav>
+    <p class="foot-time">Medan · <span data-clock>--:--</span> <span class="muted">UTC+7</span></p>
+  </div>
+  <p class="foot-mark" aria-hidden="true">mahfudh<span>.</span></p>
 </footer>
-
-<script src="script.js?v=22"></script>
+<dialog class="dlg cv" data-cv aria-labelledby="cv-title">
+  <div class="dlg-panel">
+    <button type="button" class="dlg-x" data-cv-close aria-label="Close">✕</button>
+    <div data-cv-step="request">
+      <p class="eyebrow">Download CV</p>
+      <h2 id="cv-title" class="dlg-title">Request access.</h2>
+      <p class="dlg-copy">Leave your name and email, I review each request myself and email you a one-time passcode to unlock the download.</p>
+      <form class="form" data-cv-request-form novalidate>
+        <label class="field"><span>Name</span><input type="text" name="name" autocomplete="name" placeholder="Your name" required></label>
+        <label class="field"><span>Email</span><input type="email" name="email" autocomplete="email" placeholder="you@email.com" required></label>
+        <p class="form-error" data-cv-request-error role="alert" hidden></p>
+        <button type="submit" class="pill pill-ink">Request access</button>
+      </form>
+      <button type="button" class="text-link" data-cv-goto="verify">Already have a passcode?</button>
+    </div>
+    <div data-cv-step="sent" hidden>
+      <p class="eyebrow">Download CV</p>
+      <h2 class="dlg-title">Request sent.</h2>
+      <p class="dlg-copy">I'll review it shortly. Once approved, a passcode will land in your inbox, enter it below to download.</p>
+      <button type="button" class="pill pill-ink" data-cv-goto="verify">Enter passcode</button>
+    </div>
+    <div data-cv-step="verify" hidden>
+      <p class="eyebrow">Download CV</p>
+      <h2 class="dlg-title">Enter your passcode.</h2>
+      <p class="dlg-copy">Check your email for the passcode once your request has been approved.</p>
+      <form class="form" data-cv-verify-form novalidate>
+        <label class="field"><span>Email</span><input type="email" name="email" autocomplete="email" placeholder="you@email.com" required></label>
+        <label class="field"><span>Passcode</span><input class="code-input" type="text" name="passcode" inputmode="numeric" pattern="[0-9]*" maxlength="6" placeholder="000000" autocomplete="one-time-code" required></label>
+        <p class="form-error" data-cv-verify-error role="alert" hidden></p>
+        <button type="submit" class="pill pill-ink">Unlock &amp; download</button>
+      </form>
+      <button type="button" class="text-link" data-cv-goto="request">Need to request access instead?</button>
+    </div>
+  </div>
+</dialog>
+<dialog class="dlg viewer" data-lb aria-label="Screen viewer">
+  <div class="viewer-top"><span class="viewer-count" data-lb-count>01 / 01</span><span class="viewer-cap" data-lb-cap></span><button type="button" class="viewer-x" data-lb-close>Close</button></div>
+  <figure class="viewer-stage" data-lb-stage></figure>
+  <button type="button" class="viewer-nav prev" data-lb-prev aria-label="Previous screen">←</button>
+  <button type="button" class="viewer-nav next" data-lb-next aria-label="Next screen">→</button>
+</dialog>
+<script src="script.js?v=r3-2" defer></script>
 </body>
 </html>
