@@ -143,7 +143,9 @@
     const label = $('[data-cursor-label]', cursor);
     let x = -100, y = -100, px = -100, py = -100;
     addEventListener('pointermove', e => { x = e.clientX; y = e.clientY; cursor.classList.add('is-on'); }, { passive: true });
-    document.addEventListener('pointerleave', () => cursor.classList.remove('is-on'));
+    // Hide the disc when the pointer leaves the window, so it never parks in a corner.
+    document.documentElement.addEventListener('mouseleave', () => cursor.classList.remove('is-on'));
+    addEventListener('blur', () => cursor.classList.remove('is-on'));
     const follow = () => {
       px += (x - px) * 0.22;
       py += (y - py) * 0.22;
