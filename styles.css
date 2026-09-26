@@ -143,9 +143,11 @@ ul, ol { padding: 0; list-style: none; }
 .hero-copy { display: grid; gap: 28px; }
 .hero-title { font: 800 clamp(50px, 6.8vw, 96px)/.94 var(--f-display); font-variation-settings: 'wdth' 90; letter-spacing: -.04em; }
 /* Every word sits in one grid cell; the slot eases to the active word's width while words roll through the mask. */
-.rot { font-style: normal; display: inline-grid; vertical-align: bottom; overflow: hidden; padding-bottom: .1em; margin-bottom: -.1em; color: #6d93ff; transition: width .7s var(--ease); }
+.rot { font-style: normal; display: inline-grid; vertical-align: bottom; overflow: hidden; padding-bottom: .1em; margin-bottom: -.1em; margin-right: -.1em; color: #6d93ff; transition: width .7s var(--ease); }
 /* Waiting words stay transparent so none peek through the mask's descender padding. */
-.rot > span { grid-area: 1 / 1; white-space: nowrap; justify-self: start; opacity: 0; transform: translateY(110%); transition: transform .8s var(--ease), opacity .45s; }
+/* Tight tracking lets the last glyph overhang its advance width; the right padding keeps it inside the mask,
+   and the matching negative margin keeps the gap before the next word unchanged. */
+.rot > span { grid-area: 1 / 1; white-space: nowrap; justify-self: start; padding-right: .1em; opacity: 0; transform: translateY(110%); transition: transform .8s var(--ease), opacity .45s; }
 .rot > span.is-on { opacity: 1; transform: none; }
 .rot > span.is-out { opacity: 0; transform: translateY(-110%); }
 .rot > span:only-child { opacity: 1; transform: none; }
