@@ -252,43 +252,6 @@
 
 <div class="lightbox" data-lightbox aria-hidden="true"><img alt=""></div>
 
-<div class="cv-modal" data-cv-modal aria-hidden="true" role="dialog" aria-modal="true" aria-label="Download CV">
-  <div class="cv-backdrop" data-cv-close></div>
-  <div class="cv-panel">
-    <button type="button" class="codex-close" data-cv-close aria-label="Close">✕</button>
-    <div data-cv-step="request">
-      <p class="cx-eyebrow">Reward · Download CV</p>
-      <h3>Request access.</h3>
-      <p>Leave your name and email. I review each request myself and email you a one-time passcode to unlock the download.</p>
-      <form class="cx-form" data-cv-request-form novalidate>
-        <label>Name<input type="text" name="name" placeholder="Your name" required autocomplete="name"></label>
-        <label>Email<input type="email" name="email" placeholder="you@email.com" required autocomplete="email"></label>
-        <p class="cv-error" data-cv-request-error hidden></p>
-        <button type="submit" class="btn btn-accent">Request access</button>
-      </form>
-      <button type="button" class="link-btn" data-cv-goto-verify>Already have a passcode?</button>
-    </div>
-    <div data-cv-step="sent" hidden>
-      <p class="cx-eyebrow">Reward · Download CV</p>
-      <h3>Request sent.</h3>
-      <p>I'll review it shortly. Once approved, a passcode will land in your inbox. Enter it below to download.</p>
-      <button type="button" class="btn btn-accent" data-cv-goto-verify>Enter passcode</button>
-    </div>
-    <div data-cv-step="verify" hidden>
-      <p class="cx-eyebrow">Reward · Download CV</p>
-      <h3>Enter your passcode.</h3>
-      <p>Check your email for the passcode once your request has been approved.</p>
-      <form class="cx-form" data-cv-verify-form novalidate>
-        <label>Email<input type="email" name="email" placeholder="you@email.com" required autocomplete="email"></label>
-        <label>Passcode<input type="text" name="passcode" inputmode="numeric" pattern="[0-9]*" maxlength="6" placeholder="6-digit code" required></label>
-        <p class="cv-error" data-cv-verify-error hidden></p>
-        <button type="submit" class="btn btn-accent">Unlock &amp; download</button>
-      </form>
-      <button type="button" class="link-btn" data-cv-goto-request>Need to request access instead?</button>
-    </div>
-  </div>
-</div>
-
 <script type="module" src="js/main.js"></script>
 </body>
 </html>

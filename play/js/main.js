@@ -217,7 +217,7 @@ const pickTargets = [...picks.map(p => p.object), robot.root];
 const raycaster = new THREE.Raycaster();
 const ndc = new THREE.Vector2();
 const tip = $('[data-tip]');
-const uiSelector = '.card, .hud, .codex, .cv-modal, .lightbox, .toast, a, button, input, textarea, label';
+const uiSelector = '.card, .hud, .codex, .lightbox, .toast, a, button, input, textarea, label';
 
 const shown = o => { for (; o; o = o.parent) if (!o.visible) return false; return true; };
 function pickAt(x, y) {
@@ -283,8 +283,7 @@ const tmp2 = new THREE.Vector3();
 const stars = scene.getObjectByName('stars');
 
 const overlayOpen = () => isOpen()
-  || document.querySelector('[data-lightbox]').getAttribute('aria-hidden') === 'false'
-  || document.querySelector('[data-cv-modal]').getAttribute('aria-hidden') === 'false';
+  || document.querySelector('[data-lightbox]').getAttribute('aria-hidden') === 'false';
 roam = createRoam({
   robot, levels, origins, picks, runPick, toast,
   isOverlayOpen: overlayOpen,

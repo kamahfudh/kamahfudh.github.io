@@ -365,17 +365,6 @@ em {
 .lightbox[aria-hidden="false"] { opacity: 1; visibility: visible; }
 .lightbox img { max-width: 100%; max-height: 100%; border-radius: 12px; object-fit: contain; }
 
-/* ---------- CV modal ---------- */
-.cv-modal { position: fixed; inset: 0; z-index: 35; display: grid; place-items: center; padding: 20px; opacity: 0; visibility: hidden; transition: opacity .3s, visibility .3s; }
-.cv-modal[aria-hidden="false"] { opacity: 1; visibility: visible; }
-.cv-backdrop { position: absolute; inset: 0; background: rgba(8, 9, 12, .72); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); }
-.cv-panel { position: relative; width: min(460px, 100%); padding: 30px 28px 24px; border-radius: 22px; background: #15171b; border: 1px solid var(--line); }
-.cv-panel h3 { font-family: var(--font-display); font-weight: 300; font-size: 28px; color: var(--ink); margin: 8px 0 8px; }
-.cv-panel p { margin: 0 0 14px; font-size: 14.5px; }
-.cv-error { color: #ff8577; font-size: 13.5px !important; margin: 0 !important; }
-.link-btn { margin-top: 14px; font-size: 13px; color: var(--ink-faint); text-decoration: underline; text-underline-offset: 3px; }
-.link-btn:hover { color: var(--ink); }
-
 @media (max-width: 760px) {
   .hud-btn { padding: 7px 11px; }
   .stats { gap: 6px 12px; }
