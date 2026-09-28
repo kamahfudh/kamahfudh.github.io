@@ -408,7 +408,7 @@ ul, ol { padding: 0; list-style: none; }
 @keyframes slide { from { opacity: 0; transform: translateX(var(--from, 30px)) scale(.98); } }
 .viewer-nav { position: absolute; top: 50%; z-index: 2; width: 54px; height: 54px; margin-top: -27px; border-radius: 50%; border: 1px solid var(--hair-2); font-size: 20px; transition: background-color .2s; }
 .viewer-nav:hover { background: rgba(255, 255, 255, .08); }
-.viewer-nav.prev { left: 24px; } .viewer-nav.next { right: 24px; }
+.viewer-prev { left: 24px; } .viewer-next { right: 24px; }
 .viewer-nav[hidden] { display: none; }
 
 /* ---------- Page transitions ---------- */
