@@ -5,7 +5,6 @@
   const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const fine = matchMedia('(hover: hover) and (pointer: fine)').matches;
   const EMAIL = 'mahfudhkhoiri2906@gmail.com';
-  const CV_API_URL = 'https://script.google.com/macros/s/AKfycbwd5uic5U1bJv--e2Q9VFFGYrEwz3PjRmE-379NRP-nCKr1G5_rvkRLR4jMdjJyRvvo/exec';
   const pad = n => String(n).padStart(2, '0');
 
   // ---------- Rooms: the page repaints to the colour of whatever sits at the middle of the screen ----------
@@ -256,86 +255,6 @@
     const dx = e.changedTouches[0].clientX - sx;
     if (Math.abs(dx) > 50) (dx > 0 ? prev : next).click();
     sx = null;
-  });
-
-  // ---------- CV: request access, then unlock with a passcode ----------
-  const cv = $('[data-cv]');
-  const steps = $$('[data-cv-step]', cv);
-  let cvOpener = null;
-  const showStep = name => {
-    steps.forEach(s => { s.hidden = s.dataset.cvStep !== name; });
-    $(`[data-cv-step="${name}"] input, [data-cv-step="${name}"] button`, cv)?.focus();
-  };
-  $$('[data-cv-open]').forEach(b => b.addEventListener('click', () => {
-    cvOpener = b;
-    if (menuBtn.getAttribute('aria-expanded') === 'true') setMenu(false);
-    cv.showModal();
-    showStep('request');
-  }));
-  $('[data-cv-close]', cv).addEventListener('click', () => cv.close());
-  cv.addEventListener('click', e => { if (e.target === cv) cv.close(); });
-  cv.addEventListener('close', () => cvOpener?.focus());
-  $$('[data-cv-goto]', cv).forEach(b => b.addEventListener('click', () => showStep(b.dataset.cvGoto)));
-
-  const post = payload => fetch(CV_API_URL, {
-    method: 'POST',
-    headers: { 'Content-Type': 'text/plain;charset=utf-8' },
-    body: JSON.stringify(payload),
-  }).then(r => r.json());
-  const busy = (form, on, idle, working) => {
-    const b = $('button[type="submit"]', form);
-    b.disabled = on;
-    b.textContent = on ? working : idle;
-  };
-  const invalid = (form, names, errEl) => {
-    const bad = names.map(n => form.elements[n]).filter(f => !f.value.trim() || (f.type === 'email' && !f.checkValidity()));
-    names.forEach(n => form.elements[n].removeAttribute('aria-invalid'));
-    bad.forEach(f => f.setAttribute('aria-invalid', 'true'));
-    if (bad.length) {
-      errEl.textContent = bad[0].type === 'email' && bad[0].value.trim() ? 'That email address looks incomplete. Check it and try again.' : 'Please fill in every field before continuing.';
-      errEl.hidden = false;
-      bad[0].focus();
-    }
-    return bad.length > 0;
-  };
-
-  const reqForm = $('[data-cv-request-form]', cv);
-  const reqErr = $('[data-cv-request-error]', cv);
-  reqForm.addEventListener('submit', e => {
-    e.preventDefault();
-    reqErr.hidden = true;
-    if (invalid(reqForm, ['name', 'email'], reqErr)) return;
-    busy(reqForm, true, 'Request access', 'Sending…');
-    post({ action: 'request', name: reqForm.name.value.trim(), email: reqForm.email.value.trim() })
-      .then(res => {
-        if (res.ok) showStep('sent');
-        else { reqErr.textContent = res.error || 'Something went wrong. Please try again.'; reqErr.hidden = false; }
-      })
-      .catch(() => { reqErr.textContent = 'Network error. Check your connection and try again.'; reqErr.hidden = false; })
-      .finally(() => busy(reqForm, false, 'Request access', 'Sending…'));
-  });
-
-  const verForm = $('[data-cv-verify-form]', cv);
-  const verErr = $('[data-cv-verify-error]', cv);
-  verForm.addEventListener('submit', e => {
-    e.preventDefault();
-    verErr.hidden = true;
-    if (invalid(verForm, ['email', 'passcode'], verErr)) return;
-    busy(verForm, true, 'Unlock & download', 'Checking…');
-    post({ action: 'verify', email: verForm.email.value.trim(), passcode: verForm.passcode.value.trim() })
-      .then(res => {
-        if (!res.ok) { verErr.textContent = res.error || 'Invalid email or passcode.'; verErr.hidden = false; return; }
-        const bytes = Uint8Array.from(atob(res.base64), c => c.charCodeAt(0));
-        const url = URL.createObjectURL(new Blob([bytes], { type: res.mime || 'application/pdf' }));
-        const a = Object.assign(document.createElement('a'), { href: url, download: res.filename || 'CV.pdf' });
-        document.body.append(a);
-        a.click();
-        a.remove();
-        setTimeout(() => URL.revokeObjectURL(url), 2000);
-        cv.close();
-      })
-      .catch(() => { verErr.textContent = 'Network error. Check your connection and try again.'; verErr.hidden = false; })
-      .finally(() => busy(verForm, false, 'Unlock & download', 'Checking…'));
   });
 
   // ---------- Contact: opens a prefilled email ----------
